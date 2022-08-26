@@ -21,7 +21,7 @@ namespace AmazingAssets.CurvedWorld.Example
         public float movingSpeed = 1;
 
 
-        public float chunkSize = 60;        
+        public float chunkSize = 60;
         GameObject lastChunk;
 
 
@@ -57,15 +57,15 @@ namespace AmazingAssets.CurvedWorld.Example
                         chunk.transform.localPosition = new Vector3(i * chunkSize, 0, transform.position.z);
                         break;
                 }
-                
+
 
                 lastChunk = chunk;
 
                 if (++chunkIndex >= chunks.Length)
                     chunkIndex = 0;
-            }           
+            }
         }
-        
+
         public void DestroyChunk(RunnerChunk thisChunk)
         {
             Vector3 newPos = lastChunk.transform.position;
@@ -85,7 +85,7 @@ namespace AmazingAssets.CurvedWorld.Example
                 case AXIS.ZNegative:
                     break;
             }
-           
+
 
 
             lastChunk = thisChunk.gameObject;

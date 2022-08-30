@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ElephantSDK;
+//using ElephantSDK;
 
 public class LevelController : MonoBehaviour
 {
@@ -57,7 +57,7 @@ public class LevelController : MonoBehaviour
         }
         UIController.instance.SetLevelText(totalLevelNo);
         currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
-        Elephant.LevelStarted(totalLevelNo);
+        //Elephant.LevelStarted(totalLevelNo);
 
     }
 
@@ -66,7 +66,7 @@ public class LevelController : MonoBehaviour
     /// </summary>
     public void NextLevelEvents()
     {
-        Elephant.LevelCompleted(totalLevelNo);
+        //Elephant.LevelCompleted(totalLevelNo);
         Destroy(currentLevelObj);
         IncreaseLevelNo();
         LevelStartingEvents();
@@ -77,7 +77,7 @@ public class LevelController : MonoBehaviour
     {
         UIController.instance.SetLevelText(totalLevelNo);
         currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
-        Elephant.LevelStarted(totalLevelNo);
+        //Elephant.LevelStarted(totalLevelNo);
     }
 
     /// <summary>
@@ -85,7 +85,7 @@ public class LevelController : MonoBehaviour
     /// </summary>
     public void RestartLevelEvents()
     {
-        Elephant.LevelFailed(totalLevelNo);
+        //Elephant.LevelFailed(totalLevelNo);
         PlayerController.instance.StartingEvents();
         Destroy(currentLevelObj);
         LevelRestartEvents();

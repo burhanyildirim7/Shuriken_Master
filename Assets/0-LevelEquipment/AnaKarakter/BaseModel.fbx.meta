@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ed71f48211d424b8b889da29e51cd832
+guid: 4823dd920498a41a7b0066f22e4adf6d
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable:
@@ -10,9 +10,34 @@ ModelImporter:
       74: -4791504522942941401
     second: Armature|Armature|mixamo.com|Layer0
   - first:
-      74: -3268768826048464377
-    second: Armature|Attack2Animation
-  externalObjects: {}
+      74: 1825870284180692390
+    second: Armature|AttackAnimation
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Female_Hair_4
+    second: {fileID: 2100000, guid: 3b82a44d41f2a4333b6df7892c9887ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Female_Head_3
+    second: {fileID: 2100000, guid: 791b97c974a3e491d99a9ba79ded0796, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Female_Legs_2_Black
+    second: {fileID: 2100000, guid: 78b4df98d881c4e9d93c1ab60468bcf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Female_Torso_3_Red
+    second: {fileID: 2100000, guid: 818498e8b0b6b47b8a988006246875c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Female_Torso_3_Skin_Dark
+    second: {fileID: 2100000, guid: 2239b7e5ec9784662b37e4bcfe81f2c4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

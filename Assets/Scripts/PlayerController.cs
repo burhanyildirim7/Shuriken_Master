@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
     private float _kalanHealth;
 
+    public static bool _canCalmaAktif;
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -46,6 +48,10 @@ public class PlayerController : MonoBehaviour
                 _kalanHealth = _kalanHealth + (_karakterHealth * 0.2f);
                 _karakterHealthSlider.value = _kalanHealth;
                 _karakterHealthText.text = _kalanHealth.ToString();
+            }
+            else if (other.GetComponent<HangiSkill>()._canCalma)
+            {
+                _canCalmaAktif = true;
             }
             else if (other.GetComponent<HangiSkill>()._saldiriGücü)
             {
@@ -134,6 +140,7 @@ public class PlayerController : MonoBehaviour
         _karakterHealthSlider.value = _kalanHealth;
         _karakterHealthText.text = _kalanHealth.ToString();
 
+        _canCalmaAktif = false;
 
         //transform.parent.transform.rotation = Quaternion.Euler(0, 0, 0);
         //transform.parent.transform.position = Vector3.zero;

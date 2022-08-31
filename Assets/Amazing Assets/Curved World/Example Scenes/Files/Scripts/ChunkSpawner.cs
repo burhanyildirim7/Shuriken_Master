@@ -9,6 +9,7 @@ namespace AmazingAssets.CurvedWorld.Example
     {
         public enum AXIS { XPositive, XNegative, ZPositive, ZNegative }
 
+        public GameObject _chunkParentObject;
         public GameObject[] chunks;
         public int initialSpawnCount = 5;
         public float destoryZone = 300;
@@ -36,6 +37,8 @@ namespace AmazingAssets.CurvedWorld.Example
                 chunk.SetActive(true);
 
                 chunk.GetComponent<RunnerChunk>().spawner = this;
+
+                chunk.transform.parent = _chunkParentObject.transform;
 
                 switch (axis)
                 {

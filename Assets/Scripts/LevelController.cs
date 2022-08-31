@@ -10,6 +10,8 @@ public class LevelController : MonoBehaviour
     public List<GameObject> levels = new List<GameObject>();
     private GameObject currentLevelObj;
 
+    [SerializeField] private GameObject _olusturulanHarita;
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -56,7 +58,9 @@ public class LevelController : MonoBehaviour
             levelNo = totalLevelNo;
         }
         UIController.instance.SetLevelText(totalLevelNo);
-        currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
+        currentLevelObj = levels[levelNo - 1];
+        currentLevelObj.SetActive(true);
+        //currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
         //Elephant.LevelStarted(totalLevelNo);
 
     }
@@ -67,7 +71,12 @@ public class LevelController : MonoBehaviour
     public void NextLevelEvents()
     {
         //Elephant.LevelCompleted(totalLevelNo);
-        Destroy(currentLevelObj);
+        //Destroy(currentLevelObj);
+        for (int i = 0; i < _olusturulanHarita.transform.childCount; i++)
+        {
+            Destroy(_olusturulanHarita.transform.GetChild(0));
+        }
+        currentLevelObj.SetActive(false);
         IncreaseLevelNo();
         LevelStartingEvents();
         PlayerController.instance.StartingEvents();
@@ -76,7 +85,9 @@ public class LevelController : MonoBehaviour
     public void LevelRestartEvents()
     {
         UIController.instance.SetLevelText(totalLevelNo);
-        currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
+        currentLevelObj = levels[levelNo - 1];
+        currentLevelObj.SetActive(true);
+        //currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
         //Elephant.LevelStarted(totalLevelNo);
     }
 
@@ -87,7 +98,12 @@ public class LevelController : MonoBehaviour
     {
         //Elephant.LevelFailed(totalLevelNo);
         PlayerController.instance.StartingEvents();
-        Destroy(currentLevelObj);
+        //Destroy(currentLevelObj);
+        for (int i = 0; i < _olusturulanHarita.transform.childCount; i++)
+        {
+            Destroy(_olusturulanHarita.transform.GetChild(0));
+        }
+        currentLevelObj.SetActive(false);
         LevelRestartEvents();
     }
 }

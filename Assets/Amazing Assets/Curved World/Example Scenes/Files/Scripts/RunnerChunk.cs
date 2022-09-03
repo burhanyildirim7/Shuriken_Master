@@ -2,43 +2,41 @@
 using System.Collections;
 
 
-namespace AmazingAssets.CurvedWorld.Example
+
+public class RunnerChunk : MonoBehaviour
 {
-    public class RunnerChunk : MonoBehaviour
+    public ChunkSpawner spawner;
+
+
+    void Update()
     {
-        public ChunkSpawner spawner;
-        
+        transform.Translate(spawner.moveDirection * spawner.movingSpeed * Time.deltaTime);
+    }
 
-        void Update()
+    void FixedUpdate()
+    {
+        switch (spawner.axis)
         {
-            transform.Translate(spawner.moveDirection * spawner.movingSpeed * Time.deltaTime);
+            case ChunkSpawner.AXIS.XPositive:
+                if (transform.position.x > spawner.destoryZone)
+                    spawner.DestroyChunk(this);
+                break;
+
+            case ChunkSpawner.AXIS.XNegative:
+                if (transform.position.x < -spawner.destoryZone)
+                    spawner.DestroyChunk(this);
+                break;
+
+            case ChunkSpawner.AXIS.ZPositive:
+                if (transform.position.z > spawner.destoryZone)
+                    spawner.DestroyChunk(this);
+                break;
+
+            case ChunkSpawner.AXIS.ZNegative:
+                if (transform.position.z < -spawner.destoryZone)
+                    spawner.DestroyChunk(this);
+                break;
         }
 
-        void FixedUpdate()
-        {
-            switch (spawner.axis)
-            {
-                case ChunkSpawner.AXIS.XPositive:
-                    if (transform.position.x > spawner.destoryZone)
-                        spawner.DestroyChunk(this);
-                    break;
-
-                case ChunkSpawner.AXIS.XNegative:
-                    if (transform.position.x < -spawner.destoryZone)
-                        spawner.DestroyChunk(this);
-                    break;
-
-                case ChunkSpawner.AXIS.ZPositive:
-                    if (transform.position.z > spawner.destoryZone)
-                        spawner.DestroyChunk(this);
-                    break;
-
-                case ChunkSpawner.AXIS.ZNegative:
-                    if (transform.position.z < -spawner.destoryZone)
-                        spawner.DestroyChunk(this);
-                    break;
-            }
-            
-        }
     }
 }

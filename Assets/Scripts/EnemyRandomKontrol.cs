@@ -28,9 +28,19 @@ public class EnemyRandomKontrol : MonoBehaviour
         }
     }
 
+    public void RandomEnemyKapat()
+    {
+
+
+        for (int i = 0; i < _enemiesParent.transform.childCount; i++)
+        {
+            _enemiesParent.transform.GetChild(i).gameObject.SetActive(false);
+        }
+    }
+
     private int RandomSayiBul()
     {
-        int sayi = Random.Range(0, _enemiesParent.transform.childCount + 1);
+        int sayi = Random.Range(0, _enemiesParent.transform.childCount);
 
         if (_enemiesParent.transform.GetChild(sayi).gameObject.activeSelf)
         {

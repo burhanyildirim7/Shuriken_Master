@@ -18,9 +18,15 @@ public class PlayerController : MonoBehaviour
     public bool xVarMi = true;
     public bool collectibleVarMi = true;
 
+    public ChunkSpawner _chunkSpawner;
+
     private float _kalanHealth;
 
     public static bool _canCalmaAktif;
+
+    private float _timer;
+
+    private bool _kapandi;
 
     private void Awake()
     {
@@ -31,6 +37,28 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         StartingEvents();
+    }
+
+    private void FixedUpdate()
+    {
+        if (GameController.instance.isContinue)
+        {
+            _timer += Time.deltaTime;
+            if (_timer > 10 && _kapandi == false)
+            {
+                //_timer = 0;
+                _chunkSpawner.EnemyKapat();
+                _kapandi = true;
+            }
+            else
+            {
+
+            }
+        }
+        else
+        {
+
+        }
     }
 
     /// <summary>

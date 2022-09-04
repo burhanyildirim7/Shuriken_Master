@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
             if (_timer > _gerekliSure && _kapandi == false)
             {
                 //_timer = 0;
+                _chunkSpawner = GameObject.FindGameObjectWithTag("ChunkSpawner").GetComponent<ChunkSpawner>();
                 _chunkSpawner.EnemyKapat();
                 _kapandi = true;
             }
@@ -190,6 +191,7 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public void StartingEvents()
     {
+
         _kalanHealth = _karakterHealth;
         _karakterHealthSlider.maxValue = _kalanHealth;
         _karakterHealthSlider.value = _kalanHealth;
@@ -199,6 +201,8 @@ public class PlayerController : MonoBehaviour
         _gerekliSure = _asamaSayac * 10;
 
         _canCalmaAktif = false;
+
+
 
         //transform.parent.transform.rotation = Quaternion.Euler(0, 0, 0);
         //transform.parent.transform.position = Vector3.zero;

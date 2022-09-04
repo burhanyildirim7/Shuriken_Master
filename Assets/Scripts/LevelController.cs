@@ -48,6 +48,7 @@ public class LevelController : MonoBehaviour
     /// </summary>
     public void LevelStartingEvents()
     {
+        // currentLevelObj.GetComponent<ChunkSpawner>().LevelGecisi();
         if (totalLevelNo > levels.Count)
         {
             levelNo = Random.Range(1, levels.Count + 1);
@@ -58,9 +59,9 @@ public class LevelController : MonoBehaviour
             levelNo = totalLevelNo;
         }
         UIController.instance.SetLevelText(totalLevelNo);
-        currentLevelObj = levels[levelNo - 1];
-        currentLevelObj.SetActive(true);
-        //currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
+        //currentLevelObj = levels[levelNo - 1];
+        //currentLevelObj.SetActive(true);
+        currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
         //Elephant.LevelStarted(totalLevelNo);
 
     }
@@ -70,13 +71,14 @@ public class LevelController : MonoBehaviour
     /// </summary>
     public void NextLevelEvents()
     {
+        //currentLevelObj.GetComponent<ChunkSpawner>().LevelGecisi();
         //Elephant.LevelCompleted(totalLevelNo);
-        //Destroy(currentLevelObj);
+        Destroy(currentLevelObj);
         for (int i = 0; i < _olusturulanHarita.transform.childCount; i++)
         {
-            Destroy(_olusturulanHarita.transform.GetChild(0));
+            Destroy(_olusturulanHarita.transform.GetChild(0).gameObject);
         }
-        currentLevelObj.SetActive(false);
+        //currentLevelObj.SetActive(false);
         IncreaseLevelNo();
         LevelStartingEvents();
         PlayerController.instance.StartingEvents();
@@ -84,10 +86,11 @@ public class LevelController : MonoBehaviour
 
     public void LevelRestartEvents()
     {
+        //currentLevelObj.GetComponent<ChunkSpawner>().LevelGecisi();
         UIController.instance.SetLevelText(totalLevelNo);
-        currentLevelObj = levels[levelNo - 1];
-        currentLevelObj.SetActive(true);
-        //currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
+        //currentLevelObj = levels[levelNo - 1];
+        //currentLevelObj.SetActive(true);
+        currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
         //Elephant.LevelStarted(totalLevelNo);
     }
 
@@ -96,14 +99,15 @@ public class LevelController : MonoBehaviour
     /// </summary>
     public void RestartLevelEvents()
     {
+        //currentLevelObj.GetComponent<ChunkSpawner>().LevelGecisi();
         //Elephant.LevelFailed(totalLevelNo);
         PlayerController.instance.StartingEvents();
-        //Destroy(currentLevelObj);
+        Destroy(currentLevelObj);
         for (int i = 0; i < _olusturulanHarita.transform.childCount; i++)
         {
-            Destroy(_olusturulanHarita.transform.GetChild(0));
+            Destroy(_olusturulanHarita.transform.GetChild(0).gameObject);
         }
-        currentLevelObj.SetActive(false);
+        //currentLevelObj.SetActive(false);
         LevelRestartEvents();
     }
 }

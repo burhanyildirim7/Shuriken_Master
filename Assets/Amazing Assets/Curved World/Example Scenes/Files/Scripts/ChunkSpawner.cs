@@ -6,6 +6,8 @@ using System.Linq;
 
 public class ChunkSpawner : MonoBehaviour
 {
+    public static ChunkSpawner instance;
+
     public enum AXIS { XPositive, XNegative, ZPositive, ZNegative }
 
     public GameObject _chunkParentObject;
@@ -36,7 +38,10 @@ public class ChunkSpawner : MonoBehaviour
 
     void Awake()
     {
+        if (instance == null) instance = this;
 
+        _chunkParentObject = GameObject.FindGameObjectWithTag("OlusturulanHarita");
+        _haritaParcalari = GameObject.FindGameObjectWithTag("OlusturulanHarita");
 
         initialSpawnCount = initialSpawnCount > chunks.Length ? initialSpawnCount : chunks.Length;
 
@@ -154,7 +159,8 @@ public class ChunkSpawner : MonoBehaviour
     {
         if (_kapaliSayac == 5)
         {
-            Instantiate(_aralardaCikacakEnemyler[0], _enemySpawnPoint.transform.position, Quaternion.identity);
+            //Instantiate(_aralardaCikacakEnemyler[0], _enemySpawnPoint.transform.position, Quaternion.identity);
+            Instantiate(_aralardaCikacakEnemyler[0], new Vector3(25, 1, 0), Quaternion.identity);
         }
         else
         {
@@ -162,6 +168,14 @@ public class ChunkSpawner : MonoBehaviour
         }
 
 
+    }
+
+    public void LevelGecisi()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            Destroy(_haritaParcalari.transform.GetChild(0).gameObject);
+        }
     }
 
     private void XlerGelsin()

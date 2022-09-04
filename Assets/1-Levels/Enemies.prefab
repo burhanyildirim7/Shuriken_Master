@@ -1131,7 +1131,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2990347056144872518}
   m_Father: {fileID: 6508379416293093932}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1150,7 +1151,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379415806473951}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2717,7 +2718,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5711990138534418374}
   m_Father: {fileID: 6508379415850090343}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2736,7 +2738,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416042200973}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4884,7 +4886,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4708927857072261861}
   m_Father: {fileID: 6508379417163463554}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4903,7 +4906,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416368980487}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4967,7 +4970,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7453455735188643045}
   m_Father: {fileID: 6508379417090572536}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4986,7 +4990,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416377649574}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5456,7 +5460,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5473881315399037777}
   m_Father: {fileID: 6508379417169911569}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5475,7 +5480,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416432086713}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6062,7 +6067,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8238037908253330187}
   m_Father: {fileID: 6508379416536143055}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6081,7 +6087,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416535930279}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7067,7 +7073,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7394999632818462663}
   m_Father: {fileID: 6508379417156648623}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7086,7 +7093,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416619708618}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7618,7 +7625,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5207691419692876309}
   m_Father: {fileID: 6508379415746466208}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7637,7 +7645,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416701867482}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8439,7 +8447,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4799672001695636146}
   m_Father: {fileID: 6508379415880972509}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8458,7 +8467,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416895875256}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8956,7 +8965,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7282109227785633780}
   m_Father: {fileID: 6508379415970807429}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8975,7 +8985,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416945982324}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9039,7 +9049,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3931579230592332049}
   m_Father: {fileID: 6508379417187534495}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9058,7 +9069,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379416953030334}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9449,7 +9460,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4124359895448767453}
   m_Father: {fileID: 6508379417533223998}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9468,7 +9480,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417021143487}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9851,7 +9863,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5368528683911350279}
   m_Father: {fileID: 6508379416861043704}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9870,7 +9883,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417071470577}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10920,7 +10933,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5148715067969324199}
   m_Father: {fileID: 6508379416162839818}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10939,7 +10953,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417163290779}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11698,7 +11712,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8281647651045321255}
   m_Father: {fileID: 6508379415862961158}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11717,7 +11732,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417214690230}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12149,7 +12164,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3337224147721148717}
   m_Father: {fileID: 6508379417638046892}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12168,7 +12184,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417291885613}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12232,7 +12248,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6812612400197027761}
   m_Father: {fileID: 6508379415796076784}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12251,7 +12268,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417299176394}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -13051,7 +13068,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1057023075639314767}
   m_Father: {fileID: 6508379417760736365}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13070,7 +13088,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417479515050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14510,7 +14528,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 119207837757084685}
   m_Father: {fileID: 6508379417112994932}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14529,7 +14548,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417620022220}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15159,7 +15178,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1019416131901348490}
   m_Father: {fileID: 6508379417532450486}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15178,7 +15198,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417678311041}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -16100,7 +16120,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3160078720870362911}
   m_Father: {fileID: 6508379415929150098}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16119,7 +16140,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6508379417778781376}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -16621,3 +16642,1347 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &443921579717372406
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417620022223}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &119207837757084685 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 443921579717372406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &659194972440130740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417479515053}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &1057023075639314767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 659194972440130740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &696671615124203377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417678311040}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &1019416131901348490 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 696671615124203377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3017008336410076374
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417291885612}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &3337224147721148717 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 3017008336410076374}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3194310441625228004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417778781379}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &3160078720870362911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 3194310441625228004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3382619465450342845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379415806473950}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &2990347056144872518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 3382619465450342845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3531214411800333546
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416953030321}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &3931579230592332049 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 3531214411800333546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4517684163734435366
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417021143486}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &4124359895448767453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 4517684163734435366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4682982363617589596
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417163290778}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &5148715067969324199 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 4682982363617589596}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4978024565934384969
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416895875259}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &4799672001695636146 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 4978024565934384969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5104788779867109150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416368980486}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &4708927857072261861 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 5104788779867109150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5245482397108791869
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416042200972}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &5711990138534418374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 5245482397108791869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5510577160917274282
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416432086712}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &5473881315399037777 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 5510577160917274282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5552510434161145340
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417071470576}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &5368528683911350279 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 5552510434161145340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5749915262509907950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416701867485}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &5207691419692876309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 5749915262509907950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6414779898576075338
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417299176397}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &6812612400197027761 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 6414779898576075338}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6980962288456917278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416377649625}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &7453455735188643045 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 6980962288456917278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7002800874016924220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416619708621}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &7394999632818462663 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 7002800874016924220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7098127609742656015
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416945982327}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &7282109227785633780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 7098127609742656015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8458024119078361052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379417214690217}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &8281647651045321255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 8458024119078361052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8493157099671353072
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6508379416535930278}
+    m_Modifications:
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544551510560423420, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+      propertyPath: m_Name
+      value: KucukMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+--- !u!4 &8238037908253330187 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544551510560423419, guid: 7b11f95155a47419f9b07d5def174d89, type: 3}
+  m_PrefabInstance: {fileID: 8493157099671353072}
+  m_PrefabAsset: {fileID: 0}

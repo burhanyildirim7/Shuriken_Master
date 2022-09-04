@@ -161,16 +161,7 @@ public class ChunkSpawner : MonoBehaviour
 
         }
 
-        if (_kapaliSayac == 10)
-        {
-            //_enemyKapat = false;
-            //_kapaliSayac = 0;
-            //XlerGelsin();
-        }
-        else
-        {
 
-        }
     }
 
     private void XlerGelsin()

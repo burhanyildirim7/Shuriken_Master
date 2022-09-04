@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
 
     private float _gerekliSure;
 
+    public int _asamaSayac;
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -161,9 +163,25 @@ public class PlayerController : MonoBehaviour
 
     public void EnemyGrupResetle()
     {
-        _kapandi = false;
-        _timer = 0;
-        _gerekliSure = 20;
+        if (_asamaSayac < 3)
+        {
+            _kapandi = false;
+            _timer = 0;
+            _asamaSayac++;
+            _gerekliSure = _asamaSayac * 10;
+        }
+        else
+        {
+            GameController.instance.isContinue = false;
+            GameController.instance.ScoreCarp(1);
+            Invoke("WinScreenAc", 3);
+        }
+
+    }
+
+    private void WinScreenAc()
+    {
+        UIController.instance.ActivateWinScreen();
     }
 
 
@@ -177,7 +195,8 @@ public class PlayerController : MonoBehaviour
         _karakterHealthSlider.value = _kalanHealth;
         _karakterHealthText.text = _kalanHealth.ToString();
 
-        _gerekliSure = 10;
+        _asamaSayac = 1;
+        _gerekliSure = _asamaSayac * 10;
 
         _canCalmaAktif = false;
 

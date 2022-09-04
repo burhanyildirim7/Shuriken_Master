@@ -17,6 +17,7 @@ public class EnemyYolKontrol : MonoBehaviour
         if (other.gameObject.tag == "Shuriken")
         {
             _kontrolEdilecekEnemy.SetActive(false);
+            GetComponent<Collider>().enabled = false;
             Destroy(other.gameObject);
         }
         else
@@ -28,5 +29,6 @@ public class EnemyYolKontrol : MonoBehaviour
     public void EnemySetTrue()
     {
         _kontrolEdilecekEnemy.SetActive(true);
+        GetComponent<Collider>().enabled = true;
     }
 }

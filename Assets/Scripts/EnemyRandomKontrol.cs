@@ -20,7 +20,7 @@ public class EnemyRandomKontrol : MonoBehaviour
 
     public void RandomEnemyAc()
     {
-        _kacTaneAcilacak = Random.Range(3, 8);
+        _kacTaneAcilacak = Random.Range(2, 5);
 
         for (int i = 0; i < _kacTaneAcilacak; i++)
         {
@@ -51,5 +51,13 @@ public class EnemyRandomKontrol : MonoBehaviour
             return sayi;
         }
         return 5;
+    }
+
+    public void EnemyleriAc()
+    {
+        for (int i = 0; i < _enemiesParent.transform.childCount; i++)
+        {
+            _enemiesParent.transform.GetChild(i).gameObject.GetComponent<EnemyYolKontrol>().EnemySetTrue();
+        }
     }
 }

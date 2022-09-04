@@ -115,6 +115,7 @@ public class ChunkSpawner : MonoBehaviour
             thisChunk.GetComponent<EnemyRandomKontrol>().enabled = true;
             thisChunk.GetComponent<EnemyRandomKontrol>().RandomEnemyKapat();
             thisChunk.GetComponent<EnemyRandomKontrol>().RandomEnemyAc();
+            thisChunk.GetComponent<EnemyRandomKontrol>().EnemyleriAc();
         }
 
 

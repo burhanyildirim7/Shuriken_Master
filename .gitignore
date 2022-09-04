@@ -69,3 +69,18 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Amazing Assets/Curved World/Editor/Installer/Built-in.unitypackage.meta
+Assets/Amazing Assets/Curved World/Editor/Installer/High Definition.unitypackage.meta
+Assets/Amazing Assets/Curved World/Editor/Installer/Universal.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/Mobile.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/Nature.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/One Directional Light.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/Particles.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/SpeedTree.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/Sprites.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/Standard.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/Terrain.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/TextMesh Pro.unitypackage.meta
+Assets/Amazing Assets/Curved World/Shaders/Packages/Unlit.unitypackage.meta
+Assets/NiceVibrations/OlderVersions/v1.7/NiceVibrations-v-1-7.unitypackage.meta
+Assets/NiceVibrations/OlderVersions/v2.0.1/NiceVibrations-v-2-0-1.unitypackage.meta

@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
     private bool _kapandi;
 
+    private float _gerekliSure;
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -44,7 +46,7 @@ public class PlayerController : MonoBehaviour
         if (GameController.instance.isContinue)
         {
             _timer += Time.deltaTime;
-            if (_timer > 10 && _kapandi == false)
+            if (_timer > _gerekliSure && _kapandi == false)
             {
                 //_timer = 0;
                 _chunkSpawner.EnemyKapat();
@@ -157,6 +159,13 @@ public class PlayerController : MonoBehaviour
         _karakterHealthText.text = _kalanHealth.ToString();
     }
 
+    public void EnemyGrupResetle()
+    {
+        _kapandi = false;
+        _timer = 0;
+        _gerekliSure = 20;
+    }
+
 
     /// <summary>
     /// Bu fonksiyon her level baslarken cagrilir. 
@@ -167,6 +176,8 @@ public class PlayerController : MonoBehaviour
         _karakterHealthSlider.maxValue = _kalanHealth;
         _karakterHealthSlider.value = _kalanHealth;
         _karakterHealthText.text = _kalanHealth.ToString();
+
+        _gerekliSure = 10;
 
         _canCalmaAktif = false;
 

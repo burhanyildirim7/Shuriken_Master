@@ -26,6 +26,10 @@ public class ChunkSpawner : MonoBehaviour
 
     public GameObject _haritaParcalari;
 
+    public GameObject _enemySpawnPoint;
+
+    public List<GameObject> _aralardaCikacakEnemyler = new List<GameObject>();
+
     private bool _enemyKapat;
 
     private int _kapaliSayac;
@@ -124,6 +128,7 @@ public class ChunkSpawner : MonoBehaviour
     public void EnemyKapat()
     {
         _enemyKapat = true;
+        _kapaliSayac = 0;
         /*
         for (int i = 0; i < _haritaParcalari.transform.childCount; i++)
         {
@@ -147,10 +152,19 @@ public class ChunkSpawner : MonoBehaviour
 
     private void EnemyKapalilikSorgula()
     {
+        if (_kapaliSayac == 5)
+        {
+            Instantiate(_aralardaCikacakEnemyler[0], _enemySpawnPoint.transform.position, Quaternion.identity);
+        }
+        else
+        {
+
+        }
+
         if (_kapaliSayac == 10)
         {
-            _enemyKapat = false;
-            _kapaliSayac = 0;
+            //_enemyKapat = false;
+            //_kapaliSayac = 0;
             //XlerGelsin();
         }
         else

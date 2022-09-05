@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class EnemyYolKontrol : MonoBehaviour
 {
-    [SerializeField] private GameObject _kontrolEdilecekEnemy;
+    [SerializeField] private List<GameObject> _kontrolEdilecekEnemyList = new List<GameObject>();
+
+    private int _acilanEnemy;
 
     void Start()
     {
-        _kontrolEdilecekEnemy.SetActive(true);
+        _acilanEnemy = Random.Range(0, _kontrolEdilecekEnemyList.Count + 1);
+        _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(true);
     }
 
 
@@ -16,7 +19,7 @@ public class EnemyYolKontrol : MonoBehaviour
     {
         if (other.gameObject.tag == "Shuriken")
         {
-            _kontrolEdilecekEnemy.SetActive(false);
+            _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(false);
             GetComponent<Collider>().enabled = false;
             Destroy(other.gameObject);
         }
@@ -28,7 +31,7 @@ public class EnemyYolKontrol : MonoBehaviour
 
     public void EnemySetTrue()
     {
-        _kontrolEdilecekEnemy.SetActive(true);
+        _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(true);
         GetComponent<Collider>().enabled = true;
     }
 }

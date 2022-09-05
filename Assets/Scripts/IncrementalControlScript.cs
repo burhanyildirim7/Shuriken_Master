@@ -238,6 +238,7 @@ public class IncrementalControlScript : MonoBehaviour
 
             }
 
+            PlayerController.instance.CanGuncelleme();
 
         }
         else
@@ -282,8 +283,6 @@ public class IncrementalControlScript : MonoBehaviour
             {
                 _incomeIncLevelText.text = "LEVEL " + PlayerPrefs.GetInt("IncomeLevelDegeri").ToString();
                 //_incomeButonPasifPaneli.SetActive(false);
-
-
             }
 
 

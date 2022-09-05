@@ -1936,7 +1936,7 @@ MonoBehaviour:
   tempLevelNo: 0
   totalLevelNo: 0
   levels:
-  - {fileID: 3729937425252210451, guid: 3e0589483d66b46c8b65261ac4b34ede, type: 3}
+  - {fileID: 5514303014849119468, guid: 652835ad79ae343948a90cb276c924ee, type: 3}
   - {fileID: 3777697179413387338, guid: c697be59e71ea4c849536fb5ada3eb51, type: 3}
   - {fileID: 6902006807741491410, guid: ca1ce73d32ccf4576be05c685161f28e, type: 3}
   - {fileID: 3137804320241678991, guid: 2d0f3356dd1f1459c8d1ad52e547677b, type: 3}
@@ -5210,6 +5210,50 @@ PrefabInstance:
       propertyPath: _getPoint
       value: 
       objectReference: {fileID: 326513068}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[0]
+      value: 
+      objectReference: {fileID: 7361221724527916387, guid: 8028dc9a49e56463ca39549cd1527c92, type: 3}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[1]
+      value: 
+      objectReference: {fileID: 3854700002147639269, guid: 3b3cb37b5dbcf4bab83309025086fc56, type: 3}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[2]
+      value: 
+      objectReference: {fileID: 3367662853634697373, guid: bbaacde23d7e44268bc50cbb974f786a, type: 3}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[3]
+      value: 
+      objectReference: {fileID: 4907095487622133657, guid: 345d07fc63d0742269240ae90bfa41af, type: 3}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[4]
+      value: 
+      objectReference: {fileID: 7423931555227853624, guid: 98d5a5066c4ef431c925eb0fb6884168, type: 3}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[5]
+      value: 
+      objectReference: {fileID: 976234629601644002, guid: 8eef338d2935b4453888ecb21e8da3a1, type: 3}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[6]
+      value: 
+      objectReference: {fileID: 7012897275067312736, guid: 69ddf48157f3144da92d6deb393615de, type: 3}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[7]
+      value: 
+      objectReference: {fileID: 213796749883065413, guid: c87249dd542c34867b17fe88ca4e3b85, type: 3}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[8]
+      value: 
+      objectReference: {fileID: 4928483679130053111, guid: 30f4e35ce2b1b48349ae245e31c40c9a, type: 3}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _shurikenObjectList.Array.data[9]
+      value: 
+      objectReference: {fileID: 7293648201104596680, guid: bc1e8450872e34523b371603e61fa9d7, type: 3}
     - target: {fileID: 2799172764124332601, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
       propertyPath: m_Name
       value: Player

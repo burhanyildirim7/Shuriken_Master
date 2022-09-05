@@ -185,6 +185,14 @@ public class PlayerController : MonoBehaviour
         UIController.instance.ActivateWinScreen();
     }
 
+    public void CanGuncelleme()
+    {
+        _karakterHealth = 100 + (PlayerPrefs.GetInt("StaminaLevelDegeri") * 25);
+        _kalanHealth = _karakterHealth;
+        _karakterHealthSlider.maxValue = _kalanHealth;
+        _karakterHealthSlider.value = _kalanHealth;
+        _karakterHealthText.text = _kalanHealth.ToString();
+    }
 
     /// <summary>
     /// Bu fonksiyon her level baslarken cagrilir. 
@@ -192,17 +200,12 @@ public class PlayerController : MonoBehaviour
     public void StartingEvents()
     {
 
-        _kalanHealth = _karakterHealth;
-        _karakterHealthSlider.maxValue = _kalanHealth;
-        _karakterHealthSlider.value = _kalanHealth;
-        _karakterHealthText.text = _kalanHealth.ToString();
-
         _asamaSayac = 1;
         _gerekliSure = _asamaSayac * 10;
 
         _canCalmaAktif = false;
 
-
+        CanGuncelleme();
 
         //transform.parent.transform.rotation = Quaternion.Euler(0, 0, 0);
         //transform.parent.transform.position = Vector3.zero;

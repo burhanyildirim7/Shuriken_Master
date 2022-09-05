@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3137804320241678991
+--- !u!1 &3729937425252210451
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3137804320241678989}
-  - component: {fileID: 3137804320241678988}
+  - component: {fileID: 3729937425252210453}
+  - component: {fileID: 3729937425252210450}
   m_Layer: 0
-  m_Name: Chunk Spawner-4
+  m_Name: Chunk Spawner-KatSayi
   m_TagString: ChunkSpawner
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3137804320241678989
+--- !u!4 &3729937425252210453
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3137804320241678991}
+  m_GameObject: {fileID: 3729937425252210451}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &3137804320241678988
+--- !u!114 &3729937425252210450
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3137804320241678991}
+  m_GameObject: {fileID: 3729937425252210451}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d6c2d6b6fe2d7f4087cc33913b4784f, type: 3}
@@ -46,11 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _chunkParentObject: {fileID: 0}
   chunks:
-  - {fileID: 8457844234541147955, guid: 870a133a8ad6240318ae9f557bef74f3, type: 3}
-  - {fileID: 4999908134813059496, guid: 98033646bb4cf4c09ac042e4ababd94d, type: 3}
-  - {fileID: 3415314118925778922, guid: 9f081eac88b6841daaa3c310c913cbb3, type: 3}
-  - {fileID: 6955435384345607550, guid: 8cc10f07691c7403c995b2930969fa63, type: 3}
-  - {fileID: 60944710503125501, guid: 2881619dae45c44628e10312cd5240aa, type: 3}
+  - {fileID: 8597354963419313583, guid: ea61ed79459b1403db6f1218d5b59a61, type: 3}
+  - {fileID: 956927554030942955, guid: f173dae6bdbff47cd8f0f48234845391, type: 3}
+  - {fileID: 6443182543639137499, guid: be64327bef4064080b4e35819e738571, type: 3}
+  - {fileID: 2895952242060964866, guid: 9debc4f1661804730a5138d1c3c2195e, type: 3}
+  - {fileID: 5907170349828424971, guid: 945ef0952064e431787b84b0a2b957d8, type: 3}
+  - {fileID: 7125393014606582690, guid: 8e72f2d2a81e84375be085fdee75d3d5, type: 3}
   initialSpawnCount: 5
   destoryZone: 100
   axis: 1

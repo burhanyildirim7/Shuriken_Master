@@ -21,6 +21,7 @@ public class EnemyYolKontrol : MonoBehaviour
         {
             _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(false);
             GetComponent<Collider>().enabled = false;
+            GameController.instance.SetScore(10 + PlayerPrefs.GetInt("level"));
             Destroy(other.gameObject);
         }
         else

@@ -76,7 +76,7 @@ public class ChunkSpawner : MonoBehaviour
                     break;
             }
 
-            chunk.GetComponent<EnemyRandomKontrol>().enabled = false;
+            //chunk.GetComponent<EnemyRandomKontrol>().enabled = false;
 
             lastChunk = chunk;
 

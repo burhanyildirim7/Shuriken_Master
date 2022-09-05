@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     public static bool _canCalmaAktif;
 
-    private float _timer;
+    public float _timer;
 
     private bool _kapandi;
 
@@ -205,13 +205,16 @@ public class PlayerController : MonoBehaviour
 
         _canCalmaAktif = false;
 
+        //_timer = 0;
+        _kapandi = false;
+
         CanGuncelleme();
 
         //transform.parent.transform.rotation = Quaternion.Euler(0, 0, 0);
         //transform.parent.transform.position = Vector3.zero;
         GameController.instance.isContinue = false;
         GameController.instance.score = 0;
-        //transform.position = new Vector3(0, transform.position.y, 0);
+        transform.position = new Vector3(0, 1, 0);
         //GetComponent<Collider>().enabled = true;
 
     }

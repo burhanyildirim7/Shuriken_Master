@@ -121,9 +121,17 @@ public class ChunkSpawner : MonoBehaviour
         }
         else
         {
-            thisChunk.GetComponent<EnemyRandomKontrol>().enabled = true;
-            thisChunk.GetComponent<EnemyRandomKontrol>().RandomEnemyKapat();
-            thisChunk.GetComponent<EnemyRandomKontrol>().RandomEnemyAc();
+            if (GameController.instance.isContinue)
+            {
+                thisChunk.GetComponent<EnemyRandomKontrol>().enabled = true;
+                thisChunk.GetComponent<EnemyRandomKontrol>().RandomEnemyKapat();
+                thisChunk.GetComponent<EnemyRandomKontrol>().RandomEnemyAc();
+            }
+            else
+            {
+
+            }
+
             //thisChunk.GetComponent<EnemyRandomKontrol>().EnemyleriAc();
         }
 

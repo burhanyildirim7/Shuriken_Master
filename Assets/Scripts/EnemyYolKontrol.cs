@@ -10,7 +10,7 @@ public class EnemyYolKontrol : MonoBehaviour
 
     void Start()
     {
-        _acilanEnemy = Random.Range(0, _kontrolEdilecekEnemyList.Count + 1);
+        _acilanEnemy = Random.Range(0, _kontrolEdilecekEnemyList.Count);
         _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(true);
     }
 

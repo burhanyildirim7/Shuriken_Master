@@ -76,7 +76,8 @@ public class LevelController : MonoBehaviour
         Destroy(currentLevelObj);
         for (int i = 0; i < _olusturulanHarita.transform.childCount; i++)
         {
-            Destroy(_olusturulanHarita.transform.GetChild(_olusturulanHarita.transform.childCount).gameObject);
+            Destroy(_olusturulanHarita.transform.GetChild(i).gameObject);
+            Debug.Log("Sildi");
         }
         //currentLevelObj.SetActive(false);
         IncreaseLevelNo();
@@ -105,7 +106,7 @@ public class LevelController : MonoBehaviour
         Destroy(currentLevelObj);
         for (int i = 0; i < _olusturulanHarita.transform.childCount; i++)
         {
-            Destroy(_olusturulanHarita.transform.GetChild(_olusturulanHarita.transform.childCount).gameObject);
+            Destroy(_olusturulanHarita.transform.GetChild(_olusturulanHarita.transform.childCount - 1).gameObject);
         }
         //currentLevelObj.SetActive(false);
         LevelRestartEvents();

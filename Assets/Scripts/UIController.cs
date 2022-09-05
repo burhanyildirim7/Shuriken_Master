@@ -50,6 +50,7 @@ public class UIController : MonoBehaviour
         GamePanel.SetActive(true);
         SetLevelText(LevelController.instance.totalLevelNo);
         SetGamePlayScoreText();
+        PlayerController.instance._timer = 0;
 
     }
 

@@ -52,7 +52,7 @@ MonoBehaviour:
   - {fileID: 2895952242060964866, guid: 9debc4f1661804730a5138d1c3c2195e, type: 3}
   - {fileID: 5907170349828424971, guid: 945ef0952064e431787b84b0a2b957d8, type: 3}
   - {fileID: 7125393014606582690, guid: 8e72f2d2a81e84375be085fdee75d3d5, type: 3}
-  initialSpawnCount: 5
+  initialSpawnCount: 6
   destoryZone: 100
   axis: 1
   moveDirection: {x: -1, y: 0, z: 0}

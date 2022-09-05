@@ -13,51 +13,12 @@ public class IncrementalControlScript : MonoBehaviour
 
     public static IncrementalControlScript instance;
 
-    public List<GameObject> _sagSutunListesi = new List<GameObject>(), _solSutunListesi = new List<GameObject>(), _karakterListesi = new List<GameObject>();
-    [SerializeField] GameObject _yikiciObj, _powerButonPasifPaneli, _staminaButonPasifPaneli, _incomeButonPasifPaneli;
+    public List<GameObject> _karakterListesi = new List<GameObject>();
+
+    [SerializeField] private Button _powerButton, _healthButton, _incomeButton;
     [SerializeField] Text _powerIncLevelText, _staminaIncLevelText, _incomeIncLevelText, _powerIncBedelText, _staminaIncBedelText, _incomeIncBedelText;
     [SerializeField] int _powerIncBedelDeger, _staminaIncBedelDeger, _incomeIncBedelDeger;
     [SerializeField] List<int> _incrementalBedel = new List<int>();
-
-    [SerializeField] private Slider _staminaSlider;
-    [SerializeField] private List<GameObject> _emojiList = new List<GameObject>();
-    [SerializeField] private List<GameObject> _karakterEmojiList = new List<GameObject>();
-    [SerializeField] private List<ParticleSystem> _efektList = new List<ParticleSystem>();
-
-    [SerializeField] private Slider _ustGucSlider;
-    [SerializeField] private Slider _altGucSlider;
-
-    [SerializeField] private GameObject _coinObjesi;
-    [SerializeField] private GameObject _coinParent;
-
-    [SerializeField] private List<Vector3> _cameraPoziyonlari = new List<Vector3>();
-
-    private Vector3 _cameraOffset;
-
-    private int _karakteriGeriCekenKuvvetSayaci;
-
-    public bool _yikim;
-
-    private float _staminaDeger;
-
-    private float _time;
-
-    private int _tiklamaSayac;
-
-    private bool _tamamlandi;
-
-    private bool _yik;
-
-    private float _incStaminaDeger;
-
-    private float _incParaKazanma;
-
-    private float _gucDegeri;
-    private float _timeDegeri;
-
-    private bool _coinSpawn;
-
-    private float _staminaDusurmeTimer;
 
     private void Awake()
     {
@@ -70,7 +31,6 @@ public class IncrementalControlScript : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("ButtonlarIcinIlkSefer") == 0)
         {
-            PlayerPrefs.SetInt("SutunDegisimSayaci", 0);
             PlayerPrefs.SetInt("PowerLevelDegeri", 1);
             PlayerPrefs.SetInt("StaminaLevelDegeri", 1);
             PlayerPrefs.SetInt("IncomeLevelDegeri", 1);
@@ -89,9 +49,10 @@ public class IncrementalControlScript : MonoBehaviour
 
             PlayerPrefs.SetInt("ButtonlarIcinIlkSefer", 1);
             PlayerPrefs.SetInt("KarakterDegisimSayaci", 1);
-            _powerButonPasifPaneli.SetActive(false);
-            _staminaButonPasifPaneli.SetActive(false);
-            _incomeButonPasifPaneli.SetActive(false);
+            _powerButton.interactable = true;
+            _healthButton.interactable = true;
+            _incomeButton.interactable = true;
+
         }
         else
         {
@@ -99,21 +60,21 @@ public class IncrementalControlScript : MonoBehaviour
             {
                 _powerIncLevelText.text = "MAX";
                 _powerIncBedelText.text = "MAX";
-                _powerButonPasifPaneli.SetActive(true);
+                _powerButton.interactable = false;
 
             }
             else
             {
                 _powerIncLevelText.text = "LEVEL " + PlayerPrefs.GetInt("PowerLevelDegeri").ToString();
                 _powerIncBedelText.text = "$" + _incrementalBedel[PlayerPrefs.GetInt("PowerCostDegeri")];
-                _powerButonPasifPaneli.SetActive(false);
+                _powerButton.interactable = true;
             }
 
             if (PlayerPrefs.GetInt("StaminaLevelDegeri") == 75)
             {
                 _staminaIncLevelText.text = "MAX";
                 _staminaIncBedelText.text = "MAX";
-                _staminaButonPasifPaneli.SetActive(true);
+                _healthButton.interactable = false;
 
                 //_incStaminaDeger = 1.6f - PlayerPrefs.GetInt("StaminaLevelDegeri") * 0.02f;
             }
@@ -121,7 +82,7 @@ public class IncrementalControlScript : MonoBehaviour
             {
                 _staminaIncLevelText.text = "LEVEL " + PlayerPrefs.GetInt("StaminaLevelDegeri").ToString();
                 _staminaIncBedelText.text = "$" + _incrementalBedel[PlayerPrefs.GetInt("StaminaCostDegeri")];
-                _staminaButonPasifPaneli.SetActive(false);
+                _healthButton.interactable = true;
 
                 //_incStaminaDeger = 1.6f - PlayerPrefs.GetInt("StaminaLevelDegeri") * 0.02f;
             }
@@ -130,13 +91,13 @@ public class IncrementalControlScript : MonoBehaviour
             {
                 _incomeIncLevelText.text = "MAX";
                 _incomeIncBedelText.text = "MAX";
-                _incomeButonPasifPaneli.SetActive(true);
+                _incomeButton.interactable = false;
             }
             else
             {
                 _incomeIncLevelText.text = "LEVEL " + PlayerPrefs.GetInt("IncomeLevelDegeri").ToString();
                 _incomeIncBedelText.text = "$" + _incrementalBedel[PlayerPrefs.GetInt("IncomeCostDegeri")];
-                _incomeButonPasifPaneli.SetActive(false);
+                _incomeButton.interactable = true;
             }
         }
         for (int i = 0; i < _karakterListesi.Count; i++)
@@ -154,71 +115,10 @@ public class IncrementalControlScript : MonoBehaviour
 
         BaslangicButonAyarlari();
 
-        _time = 0;
-        Animator _karakterAnimation = _karakterListesi[PlayerPrefs.GetInt("KarakterSirasi")].GetComponent<Animator>();
-        _karakterAnimation.SetFloat("Time", _time);
-
-        _ustGucSlider.value = 0;
-        _altGucSlider.value = 0;
-
-        _yikim = false;
-        _tamamlandi = false;
-        _yik = false;
-
-        _sagSutunListesi[PlayerPrefs.GetInt("SutunSirasi")].SetActive(true);
-        _solSutunListesi[PlayerPrefs.GetInt("SutunSirasi")].SetActive(true);
-
-        _tiklamaSayac = 0;
-
-        if (PlayerPrefs.GetInt("SutunSirasi") < 10)
-        {
-            _cameraOffset = _cameraPoziyonlari[0];
-            Debug.Log(_cameraOffset);
-        }
-        else if (PlayerPrefs.GetInt("SutunSirasi") >= 10 && PlayerPrefs.GetInt("SutunSirasi") < 17)
-        {
-            _cameraOffset = new Vector3(_cameraPoziyonlari[0].x, _cameraPoziyonlari[0].y, _cameraPoziyonlari[0].z + 10);
-            Debug.Log(_cameraOffset);
-        }
-        else if (PlayerPrefs.GetInt("SutunSirasi") >= 17)
-        {
-            _cameraOffset = new Vector3(_cameraPoziyonlari[0].x, _cameraPoziyonlari[0].y, _cameraPoziyonlari[0].z + 20);
-            Debug.Log(_cameraOffset);
-        }
-        else
-        {
-            Debug.Log(_cameraOffset);
-        }
-
-
-        _incStaminaDeger = 1.6f - PlayerPrefs.GetInt("StaminaLevelDegeri") * 0.02f;
-
-        _incParaKazanma = 1 + PlayerPrefs.GetInt("IncomeLevelDegeri") * 2;
-
-        _ustGucSlider.maxValue = 20 + PlayerPrefs.GetInt("SutunSirasi") * 10;
-        _altGucSlider.maxValue = 20 + PlayerPrefs.GetInt("SutunSirasi") * 10;
-
-        if (PlayerPrefs.GetInt("SutunSirasi") < 1)
-        {
-            _gucDegeri = 3 + PlayerPrefs.GetInt("PowerLevelDegeri") / 2;
-        }
-        else if (PlayerPrefs.GetInt("SutunSirasi") == 1)
-        {
-            _gucDegeri = 2 + PlayerPrefs.GetInt("PowerLevelDegeri") / 2;
-        }
-        else
-        {
-            _gucDegeri = 1 + PlayerPrefs.GetInt("PowerLevelDegeri") / 2;
-        }
-
-
-        _timeDegeri = _gucDegeri / _ustGucSlider.maxValue;
-
         ButonKontrol();
 
         //PlayerPrefs.SetInt("totalScore", 99999);
 
-        QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
 
     }
@@ -227,29 +127,29 @@ public class IncrementalControlScript : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("totalScore") < _incrementalBedel[PlayerPrefs.GetInt("PowerCostDegeri")])
         {
-            _powerButonPasifPaneli.SetActive(true);
+            _powerButton.interactable = false;
         }
         else
         {
-            _powerButonPasifPaneli.SetActive(false);
+            _powerButton.interactable = true;
         }
 
         if (PlayerPrefs.GetInt("totalScore") < _incrementalBedel[PlayerPrefs.GetInt("StaminaCostDegeri")])
         {
-            _staminaButonPasifPaneli.SetActive(true);
+            _healthButton.interactable = false;
         }
         else
         {
-            _staminaButonPasifPaneli.SetActive(false);
+            _healthButton.interactable = true;
         }
 
         if (PlayerPrefs.GetInt("totalScore") < _incrementalBedel[PlayerPrefs.GetInt("IncomeCostDegeri")])
         {
-            _incomeButonPasifPaneli.SetActive(true);
+            _incomeButton.interactable = false;
         }
         else
         {
-            _incomeButonPasifPaneli.SetActive(false);
+            _incomeButton.interactable = true;
         }
 
     }
@@ -275,7 +175,7 @@ public class IncrementalControlScript : MonoBehaviour
             {
                 _powerIncLevelText.text = "MAX";
                 _powerIncBedelText.text = "MAX";
-                _powerButonPasifPaneli.SetActive(true);
+                _powerButton.interactable = false;
             }
             else
             {
@@ -284,28 +184,28 @@ public class IncrementalControlScript : MonoBehaviour
 
 
             }
-            if (PlayerPrefs.GetInt("KarakterDegisimSayaci") == 6)
+            if (PlayerPrefs.GetInt("KarakterDegisimSayaci") == 8)
             {
                 PlayerPrefs.SetInt("KarakterDegisimSayaci", 1);
                 KarakterDegis();
             }
 
-            _gucDegeri = 1 + PlayerPrefs.GetInt("PowerLevelDegeri") / 2;
 
-            _timeDegeri = _gucDegeri / _ustGucSlider.maxValue;
+
+
         }
         else
         {
-            _powerButonPasifPaneli.SetActive(true);
+            _powerButton.interactable = false;
         }
 
         if (PlayerPrefs.GetInt("totalScore") > _incrementalBedel[PlayerPrefs.GetInt("PowerCostDegeri")])
         {
-            _powerButonPasifPaneli.SetActive(false);
+            _powerButton.interactable = true;
         }
         else
         {
-            _powerButonPasifPaneli.SetActive(true);
+            _powerButton.interactable = false;
         }
     }
 
@@ -328,7 +228,7 @@ public class IncrementalControlScript : MonoBehaviour
             {
                 _staminaIncLevelText.text = "MAX";
                 _staminaIncBedelText.text = "MAX";
-                _staminaButonPasifPaneli.SetActive(true);
+                _healthButton.interactable = false;
             }
             else
             {
@@ -338,20 +238,20 @@ public class IncrementalControlScript : MonoBehaviour
 
             }
 
-            _incStaminaDeger = 1.5f - PlayerPrefs.GetInt("StaminaLevelDegeri") * 0.02f;
+
         }
         else
         {
-            _staminaButonPasifPaneli.SetActive(true);
+            _healthButton.interactable = false;
         }
 
         if (PlayerPrefs.GetInt("totalScore") > _incrementalBedel[PlayerPrefs.GetInt("StaminaCostDegeri")])
         {
-            _staminaButonPasifPaneli.SetActive(false);
+            _healthButton.interactable = true;
         }
         else
         {
-            _staminaButonPasifPaneli.SetActive(true);
+            _healthButton.interactable = false;
         }
 
 
@@ -376,7 +276,7 @@ public class IncrementalControlScript : MonoBehaviour
             {
                 _incomeIncLevelText.text = "MAX";
                 _incomeIncBedelText.text = "MAX";
-                _incomeButonPasifPaneli.SetActive(true);
+                _incomeButton.interactable = false;
             }
             else
             {
@@ -386,35 +286,24 @@ public class IncrementalControlScript : MonoBehaviour
 
             }
 
-            _incParaKazanma = 1 + PlayerPrefs.GetInt("IncomeLevelDegeri") * 2;
+
         }
         else
         {
-            _incomeButonPasifPaneli.SetActive(true);
+            _incomeButton.interactable = false;
         }
 
         if (PlayerPrefs.GetInt("totalScore") > _incrementalBedel[PlayerPrefs.GetInt("IncomeCostDegeri")])
         {
-            _incomeButonPasifPaneli.SetActive(false);
+            _incomeButton.interactable = true;
         }
         else
         {
-            _incomeButonPasifPaneli.SetActive(true);
+            _incomeButton.interactable = false;
         }
     }
 
-    private IEnumerator SutunDegis()
-    {
 
-        _sagSutunListesi[PlayerPrefs.GetInt("SutunSirasi")].SetActive(false);
-        _solSutunListesi[PlayerPrefs.GetInt("SutunSirasi")].SetActive(false);
-        PlayerPrefs.SetInt("SutunSirasi", PlayerPrefs.GetInt("SutunSirasi") + 1);
-        _sagSutunListesi[PlayerPrefs.GetInt("SutunSirasi")].SetActive(true);
-        _solSutunListesi[PlayerPrefs.GetInt("SutunSirasi")].SetActive(true);
-
-        yield return new WaitForSeconds(0.1f);
-
-    }
 
     public void KarakterDegis()
     {
@@ -423,37 +312,35 @@ public class IncrementalControlScript : MonoBehaviour
         PlayerPrefs.SetInt("KarakterSirasi", PlayerPrefs.GetInt("KarakterSirasi") + 1);
         _karakterListesi[PlayerPrefs.GetInt("KarakterSirasi")].SetActive(true);
 
-        _efektList[2].Play();
-
     }
 
     private void ButonKontrol()
     {
         if (PlayerPrefs.GetInt("totalScore") > _incrementalBedel[PlayerPrefs.GetInt("PowerCostDegeri")])
         {
-            _powerButonPasifPaneli.SetActive(false);
+            _powerButton.interactable = true;
         }
         else
         {
-            _powerButonPasifPaneli.SetActive(true);
+            _powerButton.interactable = false;
         }
 
         if (PlayerPrefs.GetInt("totalScore") > _incrementalBedel[PlayerPrefs.GetInt("StaminaCostDegeri")])
         {
-            _staminaButonPasifPaneli.SetActive(false);
+            _healthButton.interactable = true;
         }
         else
         {
-            _staminaButonPasifPaneli.SetActive(true);
+            _healthButton.interactable = false;
         }
 
         if (PlayerPrefs.GetInt("totalScore") > _incrementalBedel[PlayerPrefs.GetInt("IncomeCostDegeri")])
         {
-            _incomeButonPasifPaneli.SetActive(false);
+            _incomeButton.interactable = true;
         }
         else
         {
-            _incomeButonPasifPaneli.SetActive(true);
+            _incomeButton.interactable = false;
         }
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4788496, g: 0.80017924, b: 0.8994595, a: 1}
+  m_IndirectSpecularColor: {r: 0.4770398, g: 0.79908794, b: 0.8987446, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5226,6 +5226,10 @@ PrefabInstance:
       propertyPath: _getPoint
       value: 
       objectReference: {fileID: 326513068}
+    - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
+      propertyPath: _attackHizi
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2799172764124332598, guid: 07c45859c85f04b6193e92acfd6bb146, type: 3}
       propertyPath: _shurikenObjectList.Array.size
       value: 10

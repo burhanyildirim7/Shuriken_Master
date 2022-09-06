@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EnemyGrupKontrol : MonoBehaviour
 {
+    [SerializeField] private GrupKontrol _grupKontrol;
     [SerializeField] private GameObject _kontrolEdilecekEnemy;
     [SerializeField] private float _health;
     [SerializeField] private Slider _healthSlider;
@@ -40,7 +41,7 @@ public class EnemyGrupKontrol : MonoBehaviour
             _kontrolEdilecekEnemy.SetActive(false);
             GetComponent<Collider>().enabled = false;
             _healthSlider.gameObject.SetActive(false);
-            gameObject.transform.parent.GetComponent<GrupKontrol>().EnemySayac();
+            _grupKontrol.EnemySayac();
         }
         else
         {

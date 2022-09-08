@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4907095487622133657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1131631206937939076}
@@ -138,9 +138,21 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1608710349984692384}
     m_Modifications:
+    - target: {fileID: 338682179098320992, guid: dd32fa98dc76a4ae09cfda7a0b30b2d1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1177658439993268184, guid: dd32fa98dc76a4ae09cfda7a0b30b2d1, type: 3}
       propertyPath: m_Name
       value: Weapon_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918504734919652741, guid: dd32fa98dc76a4ae09cfda7a0b30b2d1, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918504734919652741, guid: dd32fa98dc76a4ae09cfda7a0b30b2d1, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.0569389
       objectReference: {fileID: 0}
     - target: {fileID: 7368158956895288171, guid: dd32fa98dc76a4ae09cfda7a0b30b2d1, type: 3}
       propertyPath: m_RootOrder

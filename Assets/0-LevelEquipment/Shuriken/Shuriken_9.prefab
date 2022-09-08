@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4928483679130053111}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9054049151435689394}
@@ -141,6 +141,18 @@ PrefabInstance:
     - target: {fileID: 3116918563043929389, guid: af150af9406ef4c11acd331c4486143a, type: 3}
       propertyPath: m_Name
       value: Weapon_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816755574407422519, guid: af150af9406ef4c11acd331c4486143a, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816755574407422519, guid: af150af9406ef4c11acd331c4486143a, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.076933205
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331669692263491493, guid: af150af9406ef4c11acd331c4486143a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8355283539162300050, guid: af150af9406ef4c11acd331c4486143a, type: 3}
       propertyPath: m_RootOrder

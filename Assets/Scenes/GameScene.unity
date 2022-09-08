@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4770398, g: 0.79908794, b: 0.8987446, a: 1}
+  m_IndirectSpecularColor: {r: 0.4788496, g: 0.80017924, b: 0.8994595, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -510,11 +510,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _heal: 1
   _canCalma: 0
-  "_saldiriG\xFCc\xFC": 0
+  _saldiriGucu: 0
   _saldiriHizi: 0
   _ikiliAtis: 0
   _ucluAtis: 0
   _besliAtis: 0
+  _healCanvas: {fileID: 0}
+  _canAlmaCanvas: {fileID: 0}
+  _saldiriGucuCanvas: {fileID: 0}
+  _saldiriHiziCanvas: {fileID: 0}
+  _ikiliAtisCanvas: {fileID: 0}
+  _ucluAtisCanvas: {fileID: 0}
+  _besliAtisCanvas: {fileID: 0}
 --- !u!54 &558823444
 Rigidbody:
   m_ObjectHideFlags: 0

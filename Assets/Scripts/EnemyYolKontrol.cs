@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyYolKontrol : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _kontrolEdilecekEnemyList = new List<GameObject>();
+    [SerializeField] private ParticleSystem _olmeEfekti;
 
     private int _acilanEnemy;
 
@@ -19,6 +20,7 @@ public class EnemyYolKontrol : MonoBehaviour
     {
         if (other.gameObject.tag == "Shuriken")
         {
+            _olmeEfekti.Play();
             _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(false);
             GetComponent<Collider>().enabled = false;
             GameController.instance.SetScore(10 + PlayerPrefs.GetInt("level"));

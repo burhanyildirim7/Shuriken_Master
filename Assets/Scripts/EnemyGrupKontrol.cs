@@ -9,12 +9,42 @@ public class EnemyGrupKontrol : MonoBehaviour
     [SerializeField] private GameObject _kontrolEdilecekEnemy;
     [SerializeField] private float _health;
     [SerializeField] private Slider _healthSlider;
+    [SerializeField] private ParticleSystem _vurulmaEfekti;
+    [SerializeField] private ParticleSystem _olmeEfekti;
+    [SerializeField] private GameObject _bullet;
+    [SerializeField] private float _atisHizi;
+
+    private float _timer;
 
     void Start()
     {
         _kontrolEdilecekEnemy.SetActive(true);
         _healthSlider.maxValue = _health;
         _healthSlider.value = _health;
+        _timer = 0;
+    }
+
+    private void FixedUpdate()
+    {
+        _timer += Time.deltaTime;
+
+        if (_health > 0)
+        {
+            if (_timer > _atisHizi)
+            {
+                Instantiate(_bullet, new Vector3(transform.position.x, 1, transform.position.z), Quaternion.identity);
+                _timer = 0;
+            }
+            else
+            {
+
+            }
+        }
+        else
+        {
+
+        }
+
     }
 
 
@@ -38,14 +68,17 @@ public class EnemyGrupKontrol : MonoBehaviour
 
         if (_health <= 0)
         {
+            _olmeEfekti.Play();
             _kontrolEdilecekEnemy.SetActive(false);
             GetComponent<Collider>().enabled = false;
             _healthSlider.gameObject.SetActive(false);
             _grupKontrol.EnemySayac();
+
         }
         else
         {
             _healthSlider.value = _health;
+            _vurulmaEfekti.Play();
         }
     }
 }

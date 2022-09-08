@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyRandomKontrol : MonoBehaviour
 {
     [SerializeField] private GameObject _enemiesParent;
+    public GameObject _skillKapiSpawnPoint;
 
     //[SerializeField] private int _kacTaneEnemyVar;
 

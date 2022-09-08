@@ -55,7 +55,7 @@ MonoBehaviour:
   destoryZone: 100
   axis: 1
   moveDirection: {x: -1, y: 0, z: 0}
-  movingSpeed: 40
+  movingSpeed: 25
   chunkSize: 70
   _haritaParcalari: {fileID: 0}
   _enemySpawnPoint: {fileID: 0}
@@ -68,3 +68,4 @@ MonoBehaviour:
   - {fileID: 2676314600603554726, guid: 0e2305ca7630d497d8fff09fd2148c19, type: 3}
   - {fileID: 963408393363074299, guid: fa2c7b761991248d7b0be99b144b2427, type: 3}
   - {fileID: 2031573455010088953, guid: 3d9ecab9a75eb455a9162d3c5f308674, type: 3}
+  _skillKapisiObject: {fileID: 2067648476961371665, guid: efa8baa15a79b45698d0547819f791a0, type: 3}

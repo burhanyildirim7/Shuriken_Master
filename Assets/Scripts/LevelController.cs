@@ -77,7 +77,7 @@ public class LevelController : MonoBehaviour
         for (int i = 0; i < _olusturulanHarita.transform.childCount; i++)
         {
             Destroy(_olusturulanHarita.transform.GetChild(i).gameObject);
-            Debug.Log("Sildi");
+            //Debug.Log("Sildi");
         }
         //currentLevelObj.SetActive(false);
         IncreaseLevelNo();

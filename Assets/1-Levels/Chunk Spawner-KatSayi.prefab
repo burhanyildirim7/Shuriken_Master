@@ -56,7 +56,7 @@ MonoBehaviour:
   destoryZone: 100
   axis: 1
   moveDirection: {x: -1, y: 0, z: 0}
-  movingSpeed: 40
+  movingSpeed: 25
   chunkSize: 70
   _haritaParcalari: {fileID: 0}
   _enemySpawnPoint: {fileID: 0}

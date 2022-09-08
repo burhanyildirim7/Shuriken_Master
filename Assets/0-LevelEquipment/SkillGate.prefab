@@ -787,9 +787,10 @@ GameObject:
   - component: {fileID: 302787023142683002}
   - component: {fileID: 4845482694408306090}
   - component: {fileID: 1446175638729233853}
+  - component: {fileID: 5139782994433423966}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: SkillObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -889,6 +890,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &5139782994433423966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041522700883306218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f07e61df42e4bef8b16d6ec25ef7f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heal: 0
+  _canCalma: 0
+  _saldiriGucu: 0
+  _saldiriHizi: 0
+  _ikiliAtis: 0
+  _ucluAtis: 0
+  _besliAtis: 0
+  _healCanvas: {fileID: 6474402524505035301}
+  _canAlmaCanvas: {fileID: 2714573091146027125}
+  _saldiriGucuCanvas: {fileID: 2357925255136902601}
+  _saldiriHiziCanvas: {fileID: 4177601156009466769}
+  _ikiliAtisCanvas: {fileID: 7300172780214967293}
+  _ucluAtisCanvas: {fileID: 4876747458685808134}
+  _besliAtisCanvas: {fileID: 8134962780312452898}
 --- !u!1 &2067648475937216723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,7 +2892,7 @@ Transform:
   - {fileID: 5572167038272078446}
   - {fileID: 3802542546103549989}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067648477128700801
 GameObject:
@@ -3851,9 +3878,10 @@ GameObject:
   - component: {fileID: 2067648477645603927}
   - component: {fileID: 2067648477645603928}
   - component: {fileID: 2067648477645603929}
+  - component: {fileID: 2961955540959247703}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: SkillObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3953,6 +3981,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2961955540959247703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067648477645603930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f07e61df42e4bef8b16d6ec25ef7f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heal: 0
+  _canCalma: 0
+  _saldiriGucu: 0
+  _saldiriHizi: 0
+  _ikiliAtis: 0
+  _ucluAtis: 0
+  _besliAtis: 0
+  _healCanvas: {fileID: 2067648476102454943}
+  _canAlmaCanvas: {fileID: 2067648475963619087}
+  _saldiriGucuCanvas: {fileID: 2067648477228968399}
+  _saldiriHiziCanvas: {fileID: 2067648475937216723}
+  _ikiliAtisCanvas: {fileID: 2067648477713818498}
+  _ucluAtisCanvas: {fileID: 2067648477949288420}
+  _besliAtisCanvas: {fileID: 2067648477934100210}
 --- !u!1 &2067648477689887621
 GameObject:
   m_ObjectHideFlags: 0
@@ -8616,9 +8670,10 @@ GameObject:
   - component: {fileID: 3923620111170158945}
   - component: {fileID: 9090094876518148683}
   - component: {fileID: 6076794272094598291}
+  - component: {fileID: 7852976472651658375}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: SkillObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8718,6 +8773,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &7852976472651658375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6506976259367080370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f07e61df42e4bef8b16d6ec25ef7f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heal: 0
+  _canCalma: 0
+  _saldiriGucu: 0
+  _saldiriHizi: 0
+  _ikiliAtis: 0
+  _ucluAtis: 0
+  _besliAtis: 0
+  _healCanvas: {fileID: 6763584342364045020}
+  _canAlmaCanvas: {fileID: 7338681492004466381}
+  _saldiriGucuCanvas: {fileID: 138039071867426499}
+  _saldiriHiziCanvas: {fileID: 6725383418867150483}
+  _ikiliAtisCanvas: {fileID: 8355748751960031007}
+  _ucluAtisCanvas: {fileID: 1344536356876450695}
+  _besliAtisCanvas: {fileID: 6886027699464380925}
 --- !u!1 &6674995500691839075
 GameObject:
   m_ObjectHideFlags: 0

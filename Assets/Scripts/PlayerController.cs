@@ -76,6 +76,8 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.tag == "SkillObject")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (other.GetComponent<HangiSkill>()._heal)
             {
                 _kalanHealth = _kalanHealth + (_karakterHealth * 0.2f);
@@ -86,7 +88,7 @@ public class PlayerController : MonoBehaviour
             {
                 _canCalmaAktif = true;
             }
-            else if (other.GetComponent<HangiSkill>()._saldiriGücü)
+            else if (other.GetComponent<HangiSkill>()._saldiriGucu)
             {
                 _attackKontrolScript._attackDamage = _attackKontrolScript._attackDamage + (_attackKontrolScript._attackDamage * 0.2f);
             }
@@ -121,8 +123,18 @@ public class PlayerController : MonoBehaviour
             }
 
         }
+        else if (other.gameObject.tag == "EnemyBullet")
+        {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
+            _kalanHealth = _kalanHealth - other.GetComponent<CanavarBulletScript>()._damage;
+            _karakterHealthSlider.value = _kalanHealth;
+            _karakterHealthText.text = _kalanHealth.ToString();
+        }
         else if (other.CompareTag("engel"))
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             _kalanHealth = _kalanHealth - other.GetComponent<HasarScript>()._verecegiHasar;
             _karakterHealthSlider.value = _kalanHealth;
             _karakterHealthText.text = _kalanHealth.ToString();
@@ -209,6 +221,9 @@ public class PlayerController : MonoBehaviour
         _kapandi = false;
 
         CanGuncelleme();
+
+        _attackKontrolScript._attackDamage = 10 + (PlayerPrefs.GetInt("PowerLevelDegeri") * 10);
+        _attackKontrolScript._attackHizi = 0.5f;
 
         //transform.parent.transform.rotation = Quaternion.Euler(0, 0, 0);
         //transform.parent.transform.position = Vector3.zero;

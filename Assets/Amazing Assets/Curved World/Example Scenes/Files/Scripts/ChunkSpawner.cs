@@ -32,6 +32,8 @@ public class ChunkSpawner : MonoBehaviour
 
     public List<GameObject> _aralardaCikacakEnemyler = new List<GameObject>();
 
+    public GameObject _skillKapisiObject;
+
     private bool _enemyKapat;
 
     private int _kapaliSayac;
@@ -118,6 +120,15 @@ public class ChunkSpawner : MonoBehaviour
             _kapaliSayac++;
             EnemyKapalilikSorgula();
 
+            if (_kapaliSayac == 4)
+            {
+                Instantiate(_skillKapisiObject, thisChunk.GetComponent<EnemyRandomKontrol>()._skillKapiSpawnPoint.transform.position, Quaternion.identity);
+            }
+            else
+            {
+
+            }
+
         }
         else
         {
@@ -135,7 +146,7 @@ public class ChunkSpawner : MonoBehaviour
             //thisChunk.GetComponent<EnemyRandomKontrol>().EnemyleriAc();
         }
 
-
+        //Debug.Log(_aralardaCikacakEnemyler.Count);
     }
 
     public void EnemyKapat()
@@ -168,7 +179,9 @@ public class ChunkSpawner : MonoBehaviour
         if (_kapaliSayac == 5)
         {
             //Instantiate(_aralardaCikacakEnemyler[0], _enemySpawnPoint.transform.position, Quaternion.identity);
-            Instantiate(_aralardaCikacakEnemyler[0], new Vector3(25, 1, 0), Quaternion.identity);
+            int sayi = Random.Range(0, _aralardaCikacakEnemyler.Count);
+            Instantiate(_aralardaCikacakEnemyler[sayi], new Vector3(25, 1, 0), Quaternion.identity);
+
         }
         else
         {

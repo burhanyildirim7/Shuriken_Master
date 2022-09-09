@@ -62,6 +62,8 @@ public class LevelController : MonoBehaviour
         //currentLevelObj = levels[levelNo - 1];
         //currentLevelObj.SetActive(true);
         currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
+        AppMetrica.Instance.ReportEvent("level_start - " + totalLevelNo.ToString());
+        AppMetrica.Instance.SendEventsBuffer();
         //Elephant.LevelStarted(totalLevelNo);
 
     }
@@ -91,7 +93,14 @@ public class LevelController : MonoBehaviour
         UIController.instance.SetLevelText(totalLevelNo);
         //currentLevelObj = levels[levelNo - 1];
         //currentLevelObj.SetActive(true);
-        currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
+        Destroy(currentLevelObj);
+        for (int i = 0; i < _olusturulanHarita.transform.childCount; i++)
+        {
+            Destroy(_olusturulanHarita.transform.GetChild(i).gameObject);
+            //Debug.Log("Sildi");
+        }
+        LevelStartingEvents();
+        PlayerController.instance.StartingEvents();
         //Elephant.LevelStarted(totalLevelNo);
     }
 

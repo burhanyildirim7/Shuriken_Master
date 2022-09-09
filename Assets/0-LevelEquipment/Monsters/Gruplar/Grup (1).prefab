@@ -2760,7 +2760,7 @@ GameObject:
   - component: {fileID: 1692032241206454947}
   m_Layer: 0
   m_Name: HareketParenti
-  m_TagString: Untagged
+  m_TagString: engel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2964,7 +2964,7 @@ GameObject:
   - component: {fileID: 1816463047681691083}
   m_Layer: 0
   m_Name: HareketParenti
-  m_TagString: Untagged
+  m_TagString: engel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3136,7 +3136,7 @@ GameObject:
   - component: {fileID: 4150187776159530491}
   m_Layer: 0
   m_Name: HareketParenti
-  m_TagString: Untagged
+  m_TagString: engel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3244,7 +3244,7 @@ GameObject:
   - component: {fileID: 6486387113169156668}
   m_Layer: 0
   m_Name: HareketParenti
-  m_TagString: Untagged
+  m_TagString: engel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3402,7 +3402,7 @@ GameObject:
   - component: {fileID: 1114039206738276929}
   m_Layer: 0
   m_Name: HareketParenti
-  m_TagString: Untagged
+  m_TagString: engel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

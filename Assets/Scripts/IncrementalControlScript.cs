@@ -285,7 +285,7 @@ public class IncrementalControlScript : MonoBehaviour
                 //_incomeButonPasifPaneli.SetActive(false);
             }
 
-
+            PlayerController._incomeDegeri = (10 + PlayerPrefs.GetInt("IncomeLevelDegeri"));
         }
         else
         {

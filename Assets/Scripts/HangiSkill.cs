@@ -147,5 +147,7 @@ public class HangiSkill : MonoBehaviour
         {
 
         }
+
+        Destroy(gameObject.transform.parent.gameObject, 15f);
     }
 }

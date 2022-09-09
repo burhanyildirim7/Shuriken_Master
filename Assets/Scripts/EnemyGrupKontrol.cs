@@ -19,6 +19,7 @@ public class EnemyGrupKontrol : MonoBehaviour
     void Start()
     {
         _kontrolEdilecekEnemy.SetActive(true);
+        _health = 25 + (25 * LevelController.instance.totalLevelNo);
         _healthSlider.maxValue = _health;
         _healthSlider.value = _health;
         _timer = 0;
@@ -68,11 +69,23 @@ public class EnemyGrupKontrol : MonoBehaviour
 
         if (_health <= 0)
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             _olmeEfekti.Play();
             _kontrolEdilecekEnemy.SetActive(false);
             GetComponent<Collider>().enabled = false;
             _healthSlider.gameObject.SetActive(false);
             _grupKontrol.EnemySayac();
+
+            GameController.instance.SetScore(PlayerController._incomeDegeri + PlayerPrefs.GetInt("level"));
+
+            if (PlayerController._canCalmaAktif)
+            {
+                PlayerController.instance.CanCalmaAktif();
+            }
+            else
+            {
+
+            }
 
         }
         else

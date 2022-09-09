@@ -40,54 +40,61 @@ public class AttackKontrolScript : MonoBehaviour
         {
             _timer += Time.deltaTime;
 
-            if (_attackAktif)
+            if (PlayerController._dusmanVar)
             {
-                if (_timer > _attackHizi)
+                if (_attackAktif)
                 {
-                    _timer = 0;
+                    if (_timer > _attackHizi)
+                    {
+                        _timer = 0;
 
-                    _attackDamage = 10 + (PlayerPrefs.GetInt("PowerLevelDegeri") * 10);
+                        _attackDamage = 10 + (PlayerPrefs.GetInt("PowerLevelDegeri") * 10);
 
-                    if (_standartAttack)
-                    {
-                        GameObject shuriken = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.identity);
-                        shuriken.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                    }
-                    else if (_ikiliAttack)
-                    {
-                        GameObject shuriken1 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _ikiliAttackPoints[0].transform.position, Quaternion.identity);
-                        GameObject shuriken2 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _ikiliAttackPoints[1].transform.position, Quaternion.identity);
-                        shuriken1.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                        shuriken2.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                    }
-                    else if (_ucluAttack)
-                    {
-                        GameObject shuriken1 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.identity);
-                        GameObject shuriken2 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, 10, 0)));
-                        GameObject shuriken3 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, -10, 0)));
-                        shuriken1.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                        shuriken2.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                        shuriken3.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                    }
-                    else if (_besliAttack)
-                    {
-                        GameObject shuriken1 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.identity);
-                        GameObject shuriken2 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, 10, 0)));
-                        GameObject shuriken3 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, -10, 0)));
-                        GameObject shuriken4 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, 20, 0)));
-                        GameObject shuriken5 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, -20, 0)));
-                        shuriken1.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                        shuriken2.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                        shuriken3.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                        shuriken4.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
-                        shuriken5.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                        if (_standartAttack)
+                        {
+                            GameObject shuriken = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.identity);
+                            shuriken.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                        }
+                        else if (_ikiliAttack)
+                        {
+                            GameObject shuriken1 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _ikiliAttackPoints[0].transform.position, Quaternion.identity);
+                            GameObject shuriken2 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _ikiliAttackPoints[1].transform.position, Quaternion.identity);
+                            shuriken1.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                            shuriken2.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                        }
+                        else if (_ucluAttack)
+                        {
+                            GameObject shuriken1 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.identity);
+                            GameObject shuriken2 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, 10, 0)));
+                            GameObject shuriken3 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, -10, 0)));
+                            shuriken1.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                            shuriken2.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                            shuriken3.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                        }
+                        else if (_besliAttack)
+                        {
+                            GameObject shuriken1 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.identity);
+                            GameObject shuriken2 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, 10, 0)));
+                            GameObject shuriken3 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, -10, 0)));
+                            GameObject shuriken4 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, 20, 0)));
+                            GameObject shuriken5 = Instantiate(_shurikenObjectList[PlayerPrefs.GetInt("KarakterSirasi")], _standartAttackPoint.transform.position, Quaternion.Euler(new Vector3(0, -20, 0)));
+                            shuriken1.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                            shuriken2.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                            shuriken3.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                            shuriken4.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                            shuriken5.GetComponent<ShurikenKontrolScript>()._damage = _attackDamage;
+                        }
+                        else
+                        {
+
+                        }
+
+
                     }
                     else
                     {
 
                     }
-
-
                 }
                 else
                 {

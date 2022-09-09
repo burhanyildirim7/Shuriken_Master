@@ -9,6 +9,8 @@ public class EnemyYolKontrol : MonoBehaviour
 
     private int _acilanEnemy;
 
+
+
     void Start()
     {
         _acilanEnemy = Random.Range(0, _kontrolEdilecekEnemyList.Count);
@@ -20,11 +22,21 @@ public class EnemyYolKontrol : MonoBehaviour
     {
         if (other.gameObject.tag == "Shuriken")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             _olmeEfekti.Play();
             _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(false);
             GetComponent<Collider>().enabled = false;
-            GameController.instance.SetScore(10 + PlayerPrefs.GetInt("level"));
+            GameController.instance.SetScore(PlayerController._incomeDegeri + PlayerPrefs.GetInt("level"));
             Destroy(other.gameObject);
+
+            if (PlayerController._canCalmaAktif)
+            {
+                PlayerController.instance.CanCalmaAktif();
+            }
+            else
+            {
+
+            }
         }
         else
         {

@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
     [Header("Eskiden Kalanlar")]
     [SerializeField] private AttackKontrolScript _attackKontrolScript;
+    [SerializeField] private Animator _animator;
     [Header("Girilecek Degerler")]
     [SerializeField] private Slider _karakterHealthSlider;
     [SerializeField] private Text _karakterHealthText;
@@ -24,13 +25,17 @@ public class PlayerController : MonoBehaviour
 
     public static bool _canCalmaAktif;
 
+    public static bool _dusmanVar;
+
+    public static int _incomeDegeri;
+
     public float _timer;
 
     private bool _kapandi;
 
     private float _gerekliSure;
 
-    public int _asamaSayac;
+    public static int _asamaSayac;
 
     private void Awake()
     {
@@ -59,10 +64,32 @@ public class PlayerController : MonoBehaviour
             {
 
             }
+
+
+            if (_kalanHealth > _karakterHealth)
+            {
+                _kalanHealth = _karakterHealth;
+                _karakterHealthSlider.value = _kalanHealth;
+                _karakterHealthText.text = _kalanHealth.ToString();
+            }
+            else
+            {
+
+            }
         }
         else
         {
 
+        }
+
+
+        if (_dusmanVar)
+        {
+            _animator.SetBool("Attack", true);
+        }
+        else
+        {
+            _animator.SetBool("Attack", false);
         }
     }
 
@@ -78,11 +105,21 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
+            Debug.Log("Skill Aldi");
+
             if (other.GetComponent<HangiSkill>()._heal)
             {
-                _kalanHealth = _kalanHealth + (_karakterHealth * 0.2f);
-                _karakterHealthSlider.value = _kalanHealth;
-                _karakterHealthText.text = _kalanHealth.ToString();
+                if (_kalanHealth < _karakterHealth)
+                {
+                    _kalanHealth = (int)_kalanHealth + (_karakterHealth * 0.2f);
+                    _karakterHealthSlider.value = _kalanHealth;
+                    _karakterHealthText.text = _kalanHealth.ToString();
+                }
+                else
+                {
+
+                }
+
             }
             else if (other.GetComponent<HangiSkill>()._canCalma)
             {
@@ -94,7 +131,7 @@ public class PlayerController : MonoBehaviour
             }
             else if (other.GetComponent<HangiSkill>()._saldiriHizi)
             {
-                _attackKontrolScript._attackHizi = _attackKontrolScript._attackHizi + (_attackKontrolScript._attackHizi * 0.2f);
+                _attackKontrolScript._attackHizi = _attackKontrolScript._attackHizi - (_attackKontrolScript._attackHizi * 0.2f);
             }
             else if (other.GetComponent<HangiSkill>()._ikiliAtis)
             {
@@ -122,6 +159,8 @@ public class PlayerController : MonoBehaviour
 
             }
 
+            Destroy(other.gameObject);
+
         }
         else if (other.gameObject.tag == "EnemyBullet")
         {
@@ -130,6 +169,18 @@ public class PlayerController : MonoBehaviour
             _kalanHealth = _kalanHealth - other.GetComponent<CanavarBulletScript>()._damage;
             _karakterHealthSlider.value = _kalanHealth;
             _karakterHealthText.text = _kalanHealth.ToString();
+
+            if (_kalanHealth <= 0)
+            {
+                _karakterHealthSlider.value = 0;
+                _karakterHealthText.text = 0.ToString();
+                GameController.instance.isContinue = false;
+                UIController.instance.ActivateLooseScreen();
+            }
+            else
+            {
+
+            }
         }
         else if (other.CompareTag("engel"))
         {
@@ -138,6 +189,18 @@ public class PlayerController : MonoBehaviour
             _kalanHealth = _kalanHealth - other.GetComponent<HasarScript>()._verecegiHasar;
             _karakterHealthSlider.value = _kalanHealth;
             _karakterHealthText.text = _kalanHealth.ToString();
+
+            if (_kalanHealth <= 0)
+            {
+                _karakterHealthSlider.value = 0;
+                _karakterHealthText.text = 0.ToString();
+                GameController.instance.isContinue = false;
+                UIController.instance.ActivateLooseScreen();
+            }
+            else
+            {
+
+            }
 
             // ENGELELRE CARPINCA YAPILACAKLAR....
             /*
@@ -167,16 +230,28 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
+
     public void CanCalmaAktif()
     {
-        _kalanHealth = _kalanHealth + (_karakterHealth * 0.05f);
-        _karakterHealthSlider.value = _kalanHealth;
-        _karakterHealthText.text = _kalanHealth.ToString();
+        if (_kalanHealth < _karakterHealth)
+        {
+            _kalanHealth = (int)_kalanHealth + (_karakterHealth * 0.05f);
+            _karakterHealthSlider.value = _kalanHealth;
+            _karakterHealthText.text = _kalanHealth.ToString();
+        }
+        else
+        {
+            _kalanHealth = _karakterHealth;
+            _karakterHealthSlider.value = _kalanHealth;
+            _karakterHealthText.text = _kalanHealth.ToString();
+        }
+
     }
 
     public void EnemyGrupResetle()
     {
-        if (_asamaSayac < 3)
+        if (_asamaSayac < 4)
         {
             _kapandi = false;
             _timer = 0;
@@ -185,17 +260,11 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            GameController.instance.isContinue = false;
-            GameController.instance.ScoreCarp(1);
-            Invoke("WinScreenAc", 3);
+
         }
 
     }
 
-    private void WinScreenAc()
-    {
-        UIController.instance.ActivateWinScreen();
-    }
 
     public void CanGuncelleme()
     {
@@ -217,13 +286,22 @@ public class PlayerController : MonoBehaviour
 
         _canCalmaAktif = false;
 
+        _dusmanVar = false;
+
         //_timer = 0;
         _kapandi = false;
 
         CanGuncelleme();
 
+        _incomeDegeri = (10 + PlayerPrefs.GetInt("IncomeLevelDegeri"));
+
         _attackKontrolScript._attackDamage = 10 + (PlayerPrefs.GetInt("PowerLevelDegeri") * 10);
         _attackKontrolScript._attackHizi = 0.5f;
+
+        _attackKontrolScript._ikiliAttack = false;
+        _attackKontrolScript._standartAttack = true;
+        _attackKontrolScript._ucluAttack = false;
+        _attackKontrolScript._besliAttack = false;
 
         //transform.parent.transform.rotation = Quaternion.Euler(0, 0, 0);
         //transform.parent.transform.position = Vector3.zero;

@@ -14,9 +14,13 @@ public class GrupKontrol : MonoBehaviour
 
         if (_gruptaKacEnemyVar == 0)
         {
-            if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>()._asamaSayac < 3)
+            if (PlayerController._asamaSayac < 3)
             {
                 GameObject.FindGameObjectWithTag("ChunkSpawner").GetComponent<ChunkSpawner>().EnemyAc();
+            }
+            else if (PlayerController._asamaSayac == 3)
+            {
+                GameObject.FindGameObjectWithTag("ChunkSpawner").GetComponent<ChunkSpawner>().EnemyKapat();
             }
             else
             {

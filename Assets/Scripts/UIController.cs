@@ -51,6 +51,7 @@ public class UIController : MonoBehaviour
         SetLevelText(LevelController.instance.totalLevelNo);
         SetGamePlayScoreText();
         PlayerController.instance._timer = 0;
+        PlayerController._dusmanVar = true;
 
     }
 
@@ -117,6 +118,8 @@ public class UIController : MonoBehaviour
     {
         GamePanel.SetActive(false);
         StartCoroutine(WinScreenDelay());
+
+        PlayerController._dusmanVar = false;
     }
 
     IEnumerator WinScreenDelay()
@@ -202,6 +205,8 @@ public class UIController : MonoBehaviour
     {
         GamePanel.SetActive(false);
         LoosePanel.SetActive(true);
+
+        PlayerController._dusmanVar = false;
     }
 
 
@@ -225,6 +230,7 @@ public class UIController : MonoBehaviour
         LoosePanel.SetActive(false);
         GamePanel.SetActive(false);
         tapToStartScoreText.text = PlayerPrefs.GetInt("totalScore").ToString();
+        PlayerPrefs.SetInt("totalScore", 99999);
     }
 
 

@@ -13,8 +13,8 @@ public class EnemyYolKontrol : MonoBehaviour
 
     void Start()
     {
-        _acilanEnemy = Random.Range(0, _kontrolEdilecekEnemyList.Count);
-        _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(true);
+
+        // EnemySetTrue();
     }
 
 
@@ -46,7 +46,15 @@ public class EnemyYolKontrol : MonoBehaviour
 
     public void EnemySetTrue()
     {
+        _acilanEnemy = Random.Range(0, _kontrolEdilecekEnemyList.Count);
         _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(true);
         GetComponent<Collider>().enabled = true;
+    }
+
+    public void EnemySetFalse()
+    {
+
+        _kontrolEdilecekEnemyList[_acilanEnemy].SetActive(false);
+        GetComponent<Collider>().enabled = false;
     }
 }

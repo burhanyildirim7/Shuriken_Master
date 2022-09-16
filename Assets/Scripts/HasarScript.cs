@@ -8,7 +8,7 @@ public class HasarScript : MonoBehaviour
 
     private void Start()
     {
-        _verecegiHasar = 25 + (LevelController.instance.totalLevelNo * 5);
+        _verecegiHasar = 25;
     }
 
 }

@@ -11,6 +11,8 @@ public class UIController : MonoBehaviour
     public Text gamePlayScoreText, winScreenScoreText, levelNoText, tapToStartScoreText, totalElmasText;
     public Animator ScoreTextAnim;
 
+    public IncrementalControlScript _incrementalControlScript;
+
 
 
     // singleton yapisi burada kuruluyor.
@@ -63,6 +65,7 @@ public class UIController : MonoBehaviour
         TapToStartPanel.SetActive(true);
         LevelController.instance.RestartLevelEvents();
         SetTapToStartScoreText();
+        _incrementalControlScript.ButonKontrol();
     }
 
 
@@ -75,6 +78,7 @@ public class UIController : MonoBehaviour
         GamePanel.SetActive(false);
         LevelController.instance.NextLevelEvents();
         StartCoroutine(StartScreenCoinEffect());
+        _incrementalControlScript.ButonKontrol();
     }
 
 
@@ -230,7 +234,8 @@ public class UIController : MonoBehaviour
         LoosePanel.SetActive(false);
         GamePanel.SetActive(false);
         tapToStartScoreText.text = PlayerPrefs.GetInt("totalScore").ToString();
-        PlayerPrefs.SetInt("totalScore", 99999);
+        _incrementalControlScript.ButonKontrol();
+        // PlayerPrefs.SetInt("totalScore", 99999);
     }
 
 

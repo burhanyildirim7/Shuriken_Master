@@ -21,7 +21,7 @@ public class PatlayanBoss : MonoBehaviour
     void Start()
     {
         _kontrolEdilecekEnemy.SetActive(true);
-        _health = 100 + (50 * LevelController.instance.totalLevelNo);
+        _health = 200 + (100 * LevelController.instance.totalLevelNo);
         _healthSlider.maxValue = _health;
         _healthSlider.value = _health;
         _timer = 0;

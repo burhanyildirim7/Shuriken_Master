@@ -13,19 +13,23 @@ public class EnemyRandomKontrol : MonoBehaviour
 
     private int _acilacakEnemy;
 
+    private int _sayi;
+
     void Start()
     {
-        RandomEnemyAc();
+        // RandomEnemyAc();
     }
 
 
     public void RandomEnemyAc()
     {
-        _kacTaneAcilacak = Random.Range(2, 5);
+        _kacTaneAcilacak = Random.Range(4, 8);
 
         for (int i = 0; i < _kacTaneAcilacak; i++)
         {
             _enemiesParent.transform.GetChild(RandomSayiBul()).gameObject.SetActive(true);
+            _enemiesParent.transform.GetChild(_sayi).gameObject.GetComponent<EnemyYolKontrol>().EnemySetTrue();
+
         }
     }
 
@@ -36,20 +40,22 @@ public class EnemyRandomKontrol : MonoBehaviour
         for (int i = 0; i < _enemiesParent.transform.childCount; i++)
         {
             _enemiesParent.transform.GetChild(i).gameObject.SetActive(false);
+            _enemiesParent.transform.GetChild(i).gameObject.GetComponent<EnemyYolKontrol>().EnemySetFalse();
+
         }
     }
 
     private int RandomSayiBul()
     {
-        int sayi = Random.Range(0, _enemiesParent.transform.childCount);
+        _sayi = Random.Range(0, _enemiesParent.transform.childCount);
 
-        if (_enemiesParent.transform.GetChild(sayi).gameObject.activeSelf)
+        if (_enemiesParent.transform.GetChild(_sayi).gameObject.activeSelf)
         {
             RandomSayiBul();
         }
         else
         {
-            return sayi;
+            return _sayi;
         }
         return 5;
     }

@@ -14,12 +14,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Slider _karakterHealthSlider;
     [SerializeField] private Text _karakterHealthText;
     public float _karakterHealth;
+    public ParticleSystem _damageParticle;
+    public ParticleSystem _upgradeParticle;
     [Header("Eskiden Kalanlar")]
     public int collectibleDegeri;
     public bool xVarMi = true;
     public bool collectibleVarMi = true;
 
     public ChunkSpawner _chunkSpawner;
+
+    public GameObject _enemyParent;
 
     private float _kalanHealth;
 
@@ -105,7 +109,9 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            Debug.Log("Skill Aldi");
+            _upgradeParticle.Play();
+
+            //Debug.Log("Skill Aldi");
 
             if (other.GetComponent<HangiSkill>()._heal)
             {
@@ -164,27 +170,39 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.gameObject.tag == "EnemyBullet")
         {
-            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
-
-            _kalanHealth = _kalanHealth - other.GetComponent<CanavarBulletScript>()._damage;
-            _karakterHealthSlider.value = _kalanHealth;
-            _karakterHealthText.text = _kalanHealth.ToString();
-
-            if (_kalanHealth <= 0)
+            if (GameController.instance.isContinue)
             {
-                _karakterHealthSlider.value = 0;
-                _karakterHealthText.text = 0.ToString();
-                GameController.instance.isContinue = false;
-                UIController.instance.ActivateLooseScreen();
+                MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
+                _damageParticle.Play();
+
+                _kalanHealth = _kalanHealth - other.GetComponent<CanavarBulletScript>()._damage;
+                _karakterHealthSlider.value = _kalanHealth;
+                _karakterHealthText.text = _kalanHealth.ToString();
+
+                if (_kalanHealth <= 0)
+                {
+                    _karakterHealthSlider.value = 0;
+                    _karakterHealthText.text = 0.ToString();
+                    GameController.instance.isContinue = false;
+                    UIController.instance.ActivateLooseScreen();
+                }
+                else
+                {
+
+                }
             }
             else
             {
 
             }
+
         }
         else if (other.CompareTag("engel"))
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
+            _damageParticle.Play();
 
             _kalanHealth = _kalanHealth - other.GetComponent<HasarScript>()._verecegiHasar;
             _karakterHealthSlider.value = _kalanHealth;
@@ -297,6 +315,16 @@ public class PlayerController : MonoBehaviour
 
         _attackKontrolScript._attackDamage = 10 + (PlayerPrefs.GetInt("PowerLevelDegeri") * 10);
         _attackKontrolScript._attackHizi = 0.5f;
+
+        if (_enemyParent.transform.childCount != 0)
+        {
+            Destroy(_enemyParent.transform.GetChild(0).gameObject);
+        }
+        else
+        {
+
+        }
+
 
         _attackKontrolScript._ikiliAttack = false;
         _attackKontrolScript._standartAttack = true;

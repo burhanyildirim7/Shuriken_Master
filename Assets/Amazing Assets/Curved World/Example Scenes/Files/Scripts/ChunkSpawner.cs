@@ -35,9 +35,13 @@ public class ChunkSpawner : MonoBehaviour
 
     public GameObject _skillKapisiObject;
 
+    public GameObject _enemyGrupParent;
+
     private bool _enemyKapat;
 
     private int _kapaliSayac;
+
+    private int _hizlandirmaSayac;
 
     void Awake()
     {
@@ -86,6 +90,8 @@ public class ChunkSpawner : MonoBehaviour
             if (++chunkIndex >= chunks.Length)
                 chunkIndex = 0;
         }
+
+        movingSpeed = 50;
     }
 
     public void DestroyChunk(RunnerChunk thisChunk)
@@ -126,6 +132,7 @@ public class ChunkSpawner : MonoBehaviour
                 GameObject kapi = Instantiate(_skillKapisiObject, thisChunk.GetComponent<EnemyRandomKontrol>()._skillKapiSpawnPoint.transform.position, Quaternion.Euler(new Vector3(0, 180, 0)));
                 kapi.transform.parent = thisChunk.transform;
                 kapi.transform.localPosition = Vector3.zero;
+                _hizlandirmaSayac = 0;
             }
             else
             {
@@ -140,6 +147,8 @@ public class ChunkSpawner : MonoBehaviour
                 thisChunk.GetComponent<EnemyRandomKontrol>().enabled = true;
                 thisChunk.GetComponent<EnemyRandomKontrol>().RandomEnemyKapat();
                 thisChunk.GetComponent<EnemyRandomKontrol>().RandomEnemyAc();
+                //thisChunk.GetComponent<EnemyRandomKontrol>().EnemyleriAc();
+                _hizlandirmaSayac++;
             }
             else
             {
@@ -149,6 +158,16 @@ public class ChunkSpawner : MonoBehaviour
             //thisChunk.GetComponent<EnemyRandomKontrol>().EnemyleriAc();
         }
 
+
+        if (_hizlandirmaSayac > 2)
+        {
+            movingSpeed = 25;
+        }
+        else
+        {
+            //movingSpeed = 50;
+        }
+
         //Debug.Log(_aralardaCikacakEnemyler.Count);
     }
 
@@ -156,6 +175,7 @@ public class ChunkSpawner : MonoBehaviour
     {
         _enemyKapat = true;
         _kapaliSayac = 0;
+        movingSpeed = 25;
         /*
         for (int i = 0; i < _haritaParcalari.transform.childCount; i++)
         {
@@ -168,6 +188,7 @@ public class ChunkSpawner : MonoBehaviour
     public void EnemyAc()
     {
         _enemyKapat = false;
+        movingSpeed = 50;
         /*
         for (int i = 0; i < _haritaParcalari.transform.childCount; i++)
         {
@@ -185,12 +206,16 @@ public class ChunkSpawner : MonoBehaviour
             if (PlayerController._asamaSayac == 4)
             {
                 int sayi = Random.Range(0, _sondaCikacakEnemyler.Count);
-                Instantiate(_sondaCikacakEnemyler[sayi], new Vector3(25, 0, 0), Quaternion.identity);
+                GameObject grup = Instantiate(_sondaCikacakEnemyler[sayi], new Vector3(25, 0, 0), Quaternion.identity);
+                _enemyGrupParent = GameObject.FindGameObjectWithTag("EnemyGrupParent");
+                grup.transform.parent = _enemyGrupParent.transform;
             }
             else
             {
                 int sayi = Random.Range(0, _aralardaCikacakEnemyler.Count);
-                Instantiate(_aralardaCikacakEnemyler[sayi], new Vector3(25, 1, 0), Quaternion.identity);
+                GameObject grup = Instantiate(_aralardaCikacakEnemyler[sayi], new Vector3(25, 1, 0), Quaternion.identity);
+                _enemyGrupParent = GameObject.FindGameObjectWithTag("EnemyGrupParent");
+                grup.transform.parent = _enemyGrupParent.transform;
             }
 
 

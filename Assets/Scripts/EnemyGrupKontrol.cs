@@ -19,7 +19,7 @@ public class EnemyGrupKontrol : MonoBehaviour
     void Start()
     {
         _kontrolEdilecekEnemy.SetActive(true);
-        _health = 25 + (25 * LevelController.instance.totalLevelNo);
+        _health = 100 + (50 * LevelController.instance.totalLevelNo);
         _healthSlider.maxValue = _health;
         _healthSlider.value = _health;
         _timer = 0;

@@ -235,7 +235,7 @@ public class UIController : MonoBehaviour
         GamePanel.SetActive(false);
         tapToStartScoreText.text = PlayerPrefs.GetInt("totalScore").ToString();
         _incrementalControlScript.ButonKontrol();
-        // PlayerPrefs.SetInt("totalScore", 99999);
+        PlayerPrefs.SetInt("totalScore", 99999);
     }
 
 

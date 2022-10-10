@@ -57,7 +57,7 @@ public class EnemyRandomKontrol : MonoBehaviour
         {
             return _sayi;
         }
-        return 5;
+        return 2;
     }
 
     public void EnemyleriAc()

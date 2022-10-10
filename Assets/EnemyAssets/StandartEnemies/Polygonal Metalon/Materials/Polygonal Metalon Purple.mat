@@ -11,8 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: e8a820dc9aec7d946a12eaea41e5bffb, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _SPECULARHIGHLIGHTS_OFF
+  m_ValidKeywords: []
   m_InvalidKeywords:
   - CURVEDWORLD_BEND_ID_1
   - CURVEDWORLD_BEND_TYPE_CLASSICRUNNER_X_POSITIVE
